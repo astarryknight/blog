@@ -1,4 +1,7 @@
 #b_theme{
-  width: 5em !important;
-  height: 1em !important;
+  width:1em;
+  height:1em;
+  position:absolute;
+  top:.75em;
+  right:.75em;
 }

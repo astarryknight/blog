@@ -21,7 +21,7 @@ import { Stack } from '@mui/joy';
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
   return (
-      <IconButton
+      <IconButton id="b_theme"
           variant="outlined"
           onClick={() => {
               setMode(mode === 'light' ? 'dark' : 'light');
@@ -39,14 +39,13 @@ function App() {
         <Sheet id="nav" sx={{backgroundColor:'background.level1', width:'23vw', minHeight:'100vh'}}>
           <Navbar/>
         </Sheet>
-        <Sheet sx={{width:"100%", height:"100%"}}>
-        <ModeToggle id="b_theme" sx={{width:'1em', height:'1em', position:'absolute', top:'1em', right:'1em'}}/>
+        <Sheet sx={{width:"100%", minHeight:"100vh"}}>
+        <ModeToggle sx={{}}/>
         <Router>
           <Routes>
               <Route
                   path="/"
                   element={
-                    
                       <Button>h</Button>
                   }
               ></Route>
