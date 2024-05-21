@@ -9,10 +9,14 @@ import IconButton from '@mui/joy/IconButton';
 import Box from '@mui/joy/Box';
 import "./Navbar.css";
 import HomeIcon from '@mui/icons-material/Home';
+import AboutIcon from '@mui/icons-material/EmojiPeopleRounded';
+import {Link, useNavigate, useSearchParams} from 'react-router-dom';
 
 export default function Navbar() {
+    const navigate=useNavigate();
     const [open, setOpen] = React.useState(false);
     const [open2, setOpen2] = React.useState(false);
+    const [open3, setOpen3] = React.useState(false);
     return (
       <Box
         sx={{
@@ -41,8 +45,9 @@ export default function Navbar() {
             },
           })}
         >
-          <ListItem className="normWrap"><ListItemButton className="norm"><HomeIcon/>Home</ListItemButton></ListItem>
-          <ListItem nested sx={{ my: 1 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen(!open)}>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{navigate('/')}} ><ListItemButton className="norm"><HomeIcon/>Home</ListItemButton></ListItem>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{navigate('/about')}}><ListItemButton className="norm"><AboutIcon/>About Me</ListItemButton></ListItem>
+          <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen(!open)}>
                 <KeyboardArrowDown
                   sx={{ transform: open ? 'initial' : 'rotate(-90deg)' }}
                 />
@@ -51,59 +56,93 @@ export default function Navbar() {
           >
             <ListItem>
               <Typography level="inherit" sx={{ fontWeight: open ? 'bold' : undefined, color: open ? 'text.primary' : 'inherit',}}>
-                Tutorial
+                Early Projects
               </Typography>
               <Typography component="span" level="body-xs">
-                9
+                2
               </Typography>
             </ListItem>
             {open && (
               <List sx={{ '--ListItem-paddingY': '8px' }}>
                 <ListItem>
-                  <ListItemButton>Overview</ListItemButton>
+                  <ListItemButton>Clash Stats</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>
-                    0. Set Up Your Development Environment
+                    Project ArduinX
                   </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    1. Create and Deploy Your First Gatsby Site
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>2. Use and Style React components</ListItemButton>
                 </ListItem>
               </List>
             )}
           </ListItem>
-          <ListItem nested sx={{ my: 1 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen2((bool) => !bool)}>
+          <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen2((bool) => !bool)}>
             <KeyboardArrowDown sx={{ transform: open2 ? 'initial' : 'rotate(-90deg)' }}/>
               </IconButton>
             }
           >
             <ListItem>
               <Typography level="inherit" sx={{ fontWeight: open2 ? 'bold' : undefined, color: open2 ? 'text.primary' : 'inherit',}}>
-                How-to Guides
+                Physical Projects
               </Typography>
               <Typography component="span" level="body-xs">
-                39
+                5
               </Typography>
             </ListItem>
             {open2 && (
               <List sx={{ '--ListItem-paddingY': '8px' }}>
                 <ListItem>
-                  <ListItemButton>Overview</ListItemButton>
+                  <ListItemButton>Tennis Ball Launcher</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Local Development</ListItemButton>
+                  <ListItemButton>Self-Tightening Sneakers</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Routing</ListItemButton>
+                  <ListItemButton>Custom Keyboard</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Styling</ListItemButton>
+                  <ListItemButton>Coptic Keyboard</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Ghost Chessboard</ListItemButton>
+                </ListItem>
+              </List>
+            )}
+          </ListItem>
+          <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen3((bool) => !bool)}>
+            <KeyboardArrowDown sx={{ transform: open3 ? 'initial' : 'rotate(-90deg)' }}/>
+              </IconButton>
+            }
+          >
+            <ListItem>
+              <Typography level="inherit" sx={{ fontWeight: open3 ? 'bold' : undefined, color: open3 ? 'text.primary' : 'inherit',}}>
+                Virtual Projects
+              </Typography>
+              <Typography component="span" level="body-xs">
+                7
+              </Typography>
+            </ListItem>
+            {open3 && (
+              <List sx={{ '--ListItem-paddingY': '8px' }}>
+                <ListItem>
+                  <ListItemButton>(Old) Portfolio Website</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Snake Game & Bot</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Tetris Game & Bot</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Minesweeper</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Study Buddy</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>Coptic Wordle</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>The Coptic Learning Project (CLP)</ListItemButton>
                 </ListItem>
               </List>
             )}
