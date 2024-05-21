@@ -1,0 +1,9 @@
+.norm{
+    border: none !important;
+    inset-inline-start: -32px;
+    width: 50px !important;
+}
+
+.normWrap{
+    width: calc(23vw + 24px);
+}
