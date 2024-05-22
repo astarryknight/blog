@@ -41,7 +41,7 @@ function App() {
     <CssVarsProvider>
       <Router>
         <Sheet variant="solid" sx={{backgroundColor:'background.body', display:'flex', flexDirection:'row'}}>
-          <Sheet id="nav" sx={{backgroundColor:'background.level1', width:'23vw', maxWidth:'275px', height:'100vh'}}>
+          <Sheet id="nav" sx={{backgroundColor:'background.level1', width:'23vw', maxWidth:'260px', height:'100vh'}}>
             <Sheet sx={{backgroundColor:'background.level1', height:'93vh', overflowY:'auto', overflowX:'hidden'}}>
               <Navbar/>
             </Sheet>
