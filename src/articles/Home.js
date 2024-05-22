@@ -24,13 +24,13 @@ export default function Home() {
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
-          <Typography level='body-md'>Hi, I'm John Girgis. This is my new portfolio site, where I will go through the process of each of my projects. Feel free to check the about me page for more infromation, or click on the featured project to see some of my work!</Typography>
+          <Typography level='body-md'>Hi, I'm John Girgis. This is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the about me page for more infromation about me, or click on the featured project to see some of my work!</Typography>
         </Sheet>
         <Divider orientation="vertical" />
         <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
           <Typography level='h3'>Featured Project:</Typography>
           <Typography level='body-sm'>SUBHEADER EXAMPLE</Typography>
-          <AspectRatio variant="plain" sx={{ width:'80%', my:'2em' }}>
+          <AspectRatio variant="plain" sx={{ width:'80%', my:'1em' }}>
             <Skeleton loading={loading}>
               <img
                 src={
@@ -40,9 +40,9 @@ export default function Home() {
                 }
                 alt=""
               />
-              <img src={'../src/keyboard.png'} alt=""/>
             </Skeleton>
           </AspectRatio>
+          <img src={'./keyboard.png'} alt="wlrjf"/>
         </Sheet>
       </Sheet>
     </Sheet>
