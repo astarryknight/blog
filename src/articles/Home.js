@@ -1,6 +1,7 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
 import Sheet from '@mui/joy/Sheet';
+import keyboard from "./keyboard.png";
 import {
   HashRouter as Router,
   Routes,
@@ -9,40 +10,57 @@ import {
 } from "react-router-dom";
 import Button from '@mui/joy/Button';
 import Typography from '@mui/joy/Typography';
-import IconButton from '@mui/joy/IconButton';
 import { CssVarsProvider, useColorScheme } from '@mui/joy/styles';
-import { Stack } from '@mui/joy';
 import Divider from '@mui/joy/Divider';
 import Skeleton from '@mui/joy/Skeleton';
 import AspectRatio from '@mui/joy/AspectRatio';
+import View from '@mui/icons-material/Visibility';
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
+  //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
+  // This will run one time after the component mounts
+  useEffect(() => {
+    // callback function to call when event triggers
+    const onPageLoad = () => {
+      setLoading(false);
+      // do something else
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad, false);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Typography level='h1'>Home</Typography>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
+        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
           <Typography level='body-md'>Hi, I'm John Girgis. This is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the about me page for more infromation about me, or click on the featured project to see some of my work!</Typography>
         </Sheet>
         <Divider orientation="vertical" />
-        <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+        <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
           <Typography level='h3'>Featured Project:</Typography>
-          <Typography level='body-sm'>SUBHEADER EXAMPLE</Typography>
+          <Typography level='body-sm'>COPTIC KEYBOARD</Typography>
           <AspectRatio variant="plain" sx={{ width:'80%', my:'1em' }}>
             <Skeleton loading={loading}>
               <img
                 src={
                   loading
                     ? 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
-                    : './keyboard.png'
+                    : keyboard
                 }
                 alt=""
               />
             </Skeleton>
           </AspectRatio>
-          <img src={'./keyboard.png'} alt="wlrjf"/>
+          <Button startDecorator={<View />}>View Project</Button>
         </Sheet>
       </Sheet>
     </Sheet>
