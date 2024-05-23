@@ -42,66 +42,46 @@ export default function About() {
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Typography level='h2'><AboutIcon/></Typography>
+        
         <Typography level='h1'>About</Typography>
       </Sheet>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
+        <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Background</Typography>
           <Typography level='body-md'>Hi, I'm John Girgis. I have a passion for bringing ideas to life, whether through physical/mechanical and electrical design or through programming. Most of my physical projects have focused on being innovative solutions to modern problems (see self-tightening sneakers and ghost chessboard). For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see Coptic Wordle and Coptic Language/Learning Project).</Typography>
-          <AspectRatio variant="plain" sx={{ width:'80%', my:'1em' }}>
-            <Skeleton loading={true}>
-
-            </Skeleton>
-          </AspectRatio>
-        </Sheet>
-        <Divider orientation="vertical" />
-        <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-          <Typography level='h3'>Skills</Typography>
-          <table class="charts-css area hide-data show-heading show-4-secondary-axes show-primary-axis show-labels">
-            <caption> Descriptive Line Chart Heading </caption>
-            <tbody>
-              <tr>
-                <th scope="row"> Label </th>
-                <td style={{ "--start": 0.2, "--size":0.4 }}> <span class="data"> $ 40K </span> </td>
-              </tr>
-              <tr>
-                <td style={{ "--start": 0.4, "--size":0.8 }}> <span class="data"> $ 40K </span> </td>
-              </tr>
-              <tr>
-                <td style={{ "--start": 0.8, "--size":0.6 }}> <span class="data"> $ 40K </span> </td>
-              </tr>
-              <tr>
-                <td style={{ "--start": 0.6, "--size":1.0 }}> <span class="data"> $ 40K </span> </td>
-              </tr>
-              <tr>
-                <td style={{ "--start": 1.0, "--size":0.3 }}> <span class="data"> $ 40K </span> </td>
-              </tr>
-            </tbody>
-          </table>
           <Divider/>
-          <div style={{width:'50%'}}>
-            <table class="charts-css pie show-heading">
-              <caption> Programming Languages </caption>
+          <Typography level='h3'>Skills</Typography>
+          <div style={{width:"100%"}}>
+            <table class="charts-css column hide-data show-heading show-4-secondary-axes show-primary-axis show-labels">
+              <caption> Descriptive Line Chart Heading </caption>
               <tbody>
                 <tr>
-                  <td style={{ "--start": 0, "--end":0.2 }}> <span class="data"> $ 40K </span> </td>
+                  <th scope="row"> Label </th>
+                  <td style={{ "--start": 0.2, "--size":0.4 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
-                  <td style={{ "--start": 0.2, "--end":0.5 }}> <span class="data"> $ 40K </span> </td>
+                  <td style={{ "--start": 0.4, "--size":0.8 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
-                  <td style={{ "--start": 0.5, "--end":0.6 }}> <span class="data"> $ 40K </span> </td>
+                  <td style={{ "--start": 0.8, "--size":0.6 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
-                  <td style={{ "--start": 0.6, "--end":0.8 }}> <span class="data"> $ 40K </span> </td>
+                  <td style={{ "--start": 0.6, "--size":1.0 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
-                  <td style={{ "--start": 0.8, "--end":1.0 }}> <span class="data"> $ 40K </span> </td>
+                  <td style={{ "--start": 1.0, "--size":0.3 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
               </tbody>
             </table>
           </div>
+        </Sheet>
+        <Divider orientation="vertical" />
+        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+          <AspectRatio ratio="3/4" variant="plain" sx={{ width:'90%', my:'1em' }}>
+            <Skeleton loading={true}>
+
+            </Skeleton>
+          </AspectRatio>
         </Sheet>
       </Sheet>
     </Sheet>

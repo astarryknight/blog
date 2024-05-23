@@ -19,7 +19,7 @@ import View from '@mui/icons-material/Visibility';
 import HomeIcon from '@mui/icons-material/Home';
 import { Icon } from '@mui/material';
 
-export default function Home() {
+export default function Photos() {
   const [loading, setLoading] = React.useState(true);
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
   // This will run one time after the component mounts
@@ -42,18 +42,9 @@ export default function Home() {
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        
-        <Typography level='h1'>Home</Typography>
+        <Typography level='h1'>Photo Gallery</Typography>
       </Sheet>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
-          <Typography level='h3'>Welcome!</Typography>
-          <Typography level='body-md'>Hi, I'm John Girgis. I'm a freelance developer, photographer, and engineer, and is is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the about me page for more infromation about me, or click on the featured project to see some of my work!</Typography>
-        </Sheet>
-        <Divider orientation="vertical" />
-        <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-          <Typography level='h3'>Featured Project:</Typography>
-          <Typography level='body-sm'>COPTIC KEYBOARD</Typography>
           <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
             <Skeleton loading={loading}>
               <img src={
@@ -64,9 +55,7 @@ export default function Home() {
             />
             </Skeleton>
           </AspectRatio>
-          <Button startDecorator={<View />}>View Project</Button>
         </Sheet>
       </Sheet>
-    </Sheet>
   );
 }

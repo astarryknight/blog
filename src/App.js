@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from "./Navbar.js";
 import Home from "./articles/Home.js";
 import About from "./articles/About.js";
+import Photos from "./articles/Photos.js";
 import {
   HashRouter as Router,
   Routes,
@@ -63,6 +64,12 @@ function App() {
                     path="/about"
                     element={
                       <About/>
+                    }
+                ></Route>
+                <Route
+                    path="/photos"
+                    element={
+                      <Photos/>
                     }
                 ></Route>
             </Routes>
