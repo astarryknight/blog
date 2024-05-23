@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
+import 'charts.css';
 import Sheet from '@mui/joy/Sheet';
 import Stack from '@mui/joy/Stack';
 import './about.css';
@@ -40,7 +41,10 @@ export default function About() {
   }, []);
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-      <Stack direction='row'><AboutIcon/><Typography level='h1'>About</Typography></Stack>
+      <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <Typography level='h2'><AboutIcon/></Typography>
+        <Typography level='h1'>About</Typography>
+      </Sheet>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Background</Typography>
@@ -54,16 +58,49 @@ export default function About() {
         <Divider orientation="vertical" />
         <Sheet sx={{width:'50%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center'}}>
           <Typography level='h3'>Skills</Typography>
-          <div id="chart">
-            <div className="chartItem"><p className="c1 r1">.</p></div>
-            <div className="chartItem"><p className="c2 r1">.</p></div>
-            <div className="chartItem"><p className="c3 r1">.</p></div>
-            <div className="chartItem"><p className="c1 r2">.</p></div>
-            <div className="chartItem"><p className="c2 r2">.</p></div>
-            <div className="chartItem"><p className="c3 r2">.</p></div>
-            <div className="chartItem"><p className="c1 r3">.</p></div>
-            <div className="chartItem"><p className="c2 r3">.</p></div>
-            <div className="chartItem"><p className="c3 r3">.</p></div>
+          <table class="charts-css area hide-data show-heading show-4-secondary-axes show-primary-axis show-labels">
+            <caption> Descriptive Line Chart Heading </caption>
+            <tbody>
+              <tr>
+                <th scope="row"> Label </th>
+                <td style={{ "--start": 0.2, "--size":0.4 }}> <span class="data"> $ 40K </span> </td>
+              </tr>
+              <tr>
+                <td style={{ "--start": 0.4, "--size":0.8 }}> <span class="data"> $ 40K </span> </td>
+              </tr>
+              <tr>
+                <td style={{ "--start": 0.8, "--size":0.6 }}> <span class="data"> $ 40K </span> </td>
+              </tr>
+              <tr>
+                <td style={{ "--start": 0.6, "--size":1.0 }}> <span class="data"> $ 40K </span> </td>
+              </tr>
+              <tr>
+                <td style={{ "--start": 1.0, "--size":0.3 }}> <span class="data"> $ 40K </span> </td>
+              </tr>
+            </tbody>
+          </table>
+          <Divider/>
+          <div style={{width:'50%'}}>
+            <table class="charts-css pie show-heading">
+              <caption> Programming Languages </caption>
+              <tbody>
+                <tr>
+                  <td style={{ "--start": 0, "--end":0.2 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <td style={{ "--start": 0.2, "--end":0.5 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <td style={{ "--start": 0.5, "--end":0.6 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <td style={{ "--start": 0.6, "--end":0.8 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <td style={{ "--start": 0.8, "--end":1.0 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </Sheet>
       </Sheet>

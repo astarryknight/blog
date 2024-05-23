@@ -41,7 +41,10 @@ export default function Home() {
   }, []);
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-      <Stack direction="row"><HomeIcon/><Typography level='h1'>Home</Typography></Stack>
+      <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <Typography level='h2'><HomeIcon/></Typography>
+        <Typography level='h1'>Home</Typography>
+      </Sheet>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
