@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
 import Sheet from '@mui/joy/Sheet';
+import Stack from '@mui/joy/Stack';
 import keyboard from "./keyboard.png";
 import {
   HashRouter as Router,
@@ -15,6 +16,8 @@ import Divider from '@mui/joy/Divider';
 import Skeleton from '@mui/joy/Skeleton';
 import AspectRatio from '@mui/joy/AspectRatio';
 import View from '@mui/icons-material/Visibility';
+import HomeIcon from '@mui/icons-material/Home';
+import { Icon } from '@mui/material';
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -38,7 +41,7 @@ export default function Home() {
   }, []);
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-      <Typography level='h1'>Home</Typography>
+      <Stack direction="row"><HomeIcon/><Typography level='h1'>Home</Typography></Stack>
       <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
@@ -48,16 +51,14 @@ export default function Home() {
         <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
           <Typography level='h3'>Featured Project:</Typography>
           <Typography level='body-sm'>COPTIC KEYBOARD</Typography>
-          <AspectRatio variant="plain" sx={{ width:'80%', my:'1em' }}>
+          <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
             <Skeleton loading={loading}>
-              <img
-                src={
-                  loading
-                    ? 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
-                    : keyboard
-                }
-                alt=""
-              />
+              <img src={
+                loading 
+                ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                : keyboard
+              }
+            />
             </Skeleton>
           </AspectRatio>
           <Button startDecorator={<View />}>View Project</Button>
