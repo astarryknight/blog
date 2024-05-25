@@ -33,14 +33,15 @@ function StickyGroup({open, setOpen}) {
   const { mode, setMode } = useColorScheme();
   return (
       <ButtonGroup orientation='vertical' variant="outlined" aria-label="Basic button group" sx={{height:'1em'}}>
-      <IconButton 
-          onClick={() => {
-              setMode(mode === 'light' ? 'dark' : 'light');
-          }}
-      >
-          {mode === 'light' ? <Sun /> : <Moon />}
-      </IconButton>
-      <IconButton onClick={()=>{setOpen(true)}}><SearchIcon/></IconButton>
+        <IconButton 
+            onClick={() => {
+                setMode(mode === 'light' ? 'dark' : 'light');
+            }}
+            sx={{backgroundColor:'background.body'}}
+        >
+            {mode === 'light' ? <Sun /> : <Moon />}
+        </IconButton>
+        <IconButton onClick={()=>{setOpen(true)}} sx={{backgroundColor:'background.body'}}><SearchIcon/></IconButton>
       </ButtonGroup>
   );
 }

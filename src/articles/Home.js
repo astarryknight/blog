@@ -3,6 +3,7 @@ import '@fontsource/inter';
 import Sheet from '@mui/joy/Sheet';
 import Stack from '@mui/joy/Stack';
 import keyboard from "./keyboard.png";
+import './articleStyles.css';
 import {
   HashRouter as Router,
   Routes,
@@ -42,16 +43,15 @@ export default function Home() {
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        
         <Typography level='h1'>Home</Typography>
       </Sheet>
-      <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
+      <Sheet id='content' sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <Sheet id='leftContent' sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
           <Typography level='body-md'>Hi, I'm John Girgis. I'm a freelance developer, photographer, and engineer, and is is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the about me page for more infromation about me, or click on the featured project to see some of my work!</Typography>
         </Sheet>
         <Divider orientation="vertical" />
-        <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+        <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginInline:'auto'}}>
           <Typography level='h3'>Featured Project:</Typography>
           <Typography level='body-sm'>COPTIC KEYBOARD</Typography>
           <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>

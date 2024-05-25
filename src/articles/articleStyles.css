@@ -1,0 +1,12 @@
+@media (max-width: 1000px){
+    #content{
+        flex-direction: column;
+    }
+    #leftContent{
+        width:100%;
+    }
+    #content hr{
+        width: 100%;
+        height: var(--Divider-thickness);
+    }
+}
