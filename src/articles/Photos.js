@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
 import Sheet from '@mui/joy/Sheet';
 import Stack from '@mui/joy/Stack';
-import keyboard from "../images/keyboard.png";
 import {
   HashRouter as Router,
   Routes,
@@ -18,6 +17,12 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import View from '@mui/icons-material/Visibility';
 import HomeIcon from '@mui/icons-material/Home';
 import { Icon } from '@mui/material';
+
+import dog from "../images/g_dog.jpg";
+import flower from "../images/g_flower.jpg";
+import mug from "../images/g_mug.jpg";
+import ocean from "../images/g_ocean.jpg";
+import ramen from "../images/g_ramen.jpg";
 
 export default function Photos() {
   const [loading, setLoading] = React.useState(true);
@@ -50,7 +55,47 @@ export default function Photos() {
               <img src={
                 loading 
                 ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
-                : keyboard
+                : dog
+              }
+            />
+            </Skeleton>
+          </AspectRatio>
+          <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
+            <Skeleton loading={loading}>
+              <img src={
+                loading 
+                ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                : flower
+              }
+            />
+            </Skeleton>
+          </AspectRatio>
+          <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
+            <Skeleton loading={loading}>
+              <img src={
+                loading 
+                ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                : mug
+              }
+            />
+            </Skeleton>
+          </AspectRatio>
+          <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
+            <Skeleton loading={loading}>
+              <img src={
+                loading 
+                ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                : ocean
+              }
+            />
+            </Skeleton>
+          </AspectRatio>
+          <AspectRatio variant="plain" sx={{ width:'80%', maxWidth:'600px', my:'1em' }}>
+            <Skeleton loading={loading}>
+              <img src={
+                loading 
+                ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                : ramen
               }
             />
             </Skeleton>
