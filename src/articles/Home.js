@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
 import Sheet from '@mui/joy/Sheet';
 import Stack from '@mui/joy/Stack';
-import keyboard from "./keyboard.png";
+import keyboard from "../images/keyboard.png";
 import './articleStyles.css';
 import {
   HashRouter as Router,

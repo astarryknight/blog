@@ -56,19 +56,31 @@ export default function About() {
               <caption> Descriptive Line Chart Heading </caption>
               <tbody>
                 <tr>
-                  <th scope="row"> Label </th>
-                  <td style={{ "--start": 0.2, "--size":0.4 }}> <span class="data"> $ 40K </span> </td>
+                  <th scope="row"> Photoshop </th>
+                  <td id="" style={{ "--start": 0.2, "--size":0.4, backgroundColor:'#5aa5ffbf'}}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
+                  <th scope="row"> AD Inventor </th>
                   <td style={{ "--start": 0.4, "--size":0.8 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
+                  <th scope="row"> Javascript </th>
                   <td style={{ "--start": 0.8, "--size":0.6 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
+                  <th scope="row"> Java </th>
                   <td style={{ "--start": 0.6, "--size":1.0 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
                 <tr>
+                  <th scope="row"> CSS </th>
+                  <td style={{ "--start": 1.0, "--size":0.3 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> React </th>
+                  <td style={{ "--start": 0.6, "--size":1.0 }}> <span class="data"> $ 40K </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row">  </th>
                   <td style={{ "--start": 1.0, "--size":0.3 }}> <span class="data"> $ 40K </span> </td>
                 </tr>
               </tbody>
@@ -76,8 +88,8 @@ export default function About() {
           </div>
         </Sheet>
         <Divider orientation="vertical" />
-        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-          <AspectRatio ratio="3/4" variant="plain" sx={{ width:'90%', my:'1em' }}>
+        <Sheet sx={{width:'30%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
+          <AspectRatio ratio="5/6" variant="plain" sx={{ width:'100%', my:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
             <Skeleton loading={true}>
 
             </Skeleton>
