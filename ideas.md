@@ -1,3 +1,3 @@
 [ ] spotlight-esque search mechanism
-[ ] darkmode toggle floating/fixed?
-[ ] https://www.tiny.cloud/ (editor?)
+[X] darkmode toggle floating
+[ ] "react responsive" library

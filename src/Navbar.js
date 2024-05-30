@@ -11,9 +11,10 @@ import "./Navbar.css";
 import HomeIcon from '@mui/icons-material/Home';
 import AboutIcon from '@mui/icons-material/EmojiPeopleRounded';
 import PhotoIcon from '@mui/icons-material/PhotoLibrary';
+import BugIcon from '@mui/icons-material/BugReport';
 import {Link, useNavigate, useSearchParams} from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({nav, setNav}) {
     const navigate=useNavigate();
     const [open, setOpen] = React.useState(false);
     const [open2, setOpen2] = React.useState(false);
@@ -46,9 +47,10 @@ export default function Navbar() {
             },
           })}
         >
-          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{navigate('/')}} ><ListItemButton className="norm"><HomeIcon/>Home</ListItemButton></ListItem>
-          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{navigate('/about')}}><ListItemButton className="norm"><AboutIcon/>About Me</ListItemButton></ListItem>
-          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{navigate('/photos')}}><ListItemButton className="norm"><PhotoIcon/>Photo Gallery</ListItemButton></ListItem>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{setNav(false);navigate('/')}} ><ListItemButton className="norm"><HomeIcon/>Home</ListItemButton></ListItem>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{setNav(false);navigate('/about')}}><ListItemButton className="norm"><AboutIcon/>About Me</ListItemButton></ListItem>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{setNav(false);navigate('/photos')}}><ListItemButton className="norm"><PhotoIcon/>Photo Gallery</ListItemButton></ListItem>
+          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{setNav(false);navigate('/template')}}><ListItemButton className="norm"><BugIcon/>Template</ListItemButton></ListItem>
           <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen(!open)}>
                 <KeyboardArrowDown
                   sx={{ transform: open ? 'initial' : 'rotate(-90deg)' }}
@@ -138,7 +140,7 @@ export default function Navbar() {
                   <ListItemButton>Minesweeper</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Study Buddy</ListItemButton>
+                  <ListItemButton onClick={()=>{setNav(false);navigate('/study')}}>Study Buddy</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Coptic Wordle</ListItemButton>
