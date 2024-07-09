@@ -126,7 +126,7 @@ export default function Navbar({nav, setNav}) {
                 Virtual Projects
               </Typography>
               <Typography component="span" level="body-xs">
-                7
+                8
               </Typography>
             </ListItem>
             {open3 && (
@@ -151,6 +151,9 @@ export default function Navbar({nav, setNav}) {
                 </ListItem>
                 <ListItem>
                   <ListItemButton>The Coptic Learning Project (CLP)</ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/notchable')}}>Notchable</ListItemButton>
                 </ListItem>
               </List>
             )}

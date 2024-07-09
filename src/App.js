@@ -16,6 +16,7 @@ import About from "./articles/About.js";
 import Photos from "./articles/Photos.js";
 import Template from "./articles/Template.js";
 import Study from "./articles/Study.js";
+import Notchable from "./articles/Notchable.js";
 
 //Component imports
 import Sheet from '@mui/joy/Sheet';
@@ -123,6 +124,12 @@ function App() {
                     path="/study"
                     element={
                       <Study/>
+                    }
+                ></Route>
+                <Route
+                    path="/notchable"
+                    element={
+                      <Notchable/>
                     }
                 ></Route>
             </Routes>
