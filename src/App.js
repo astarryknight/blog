@@ -15,6 +15,7 @@ import Home from "./articles/Home.js";
 import About from "./articles/About.js";
 import Photos from "./articles/Photos.js";
 import Template from "./articles/Template.js";
+import TennisLauncher from "./articles/TennisLauncher.js";
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
 
@@ -133,15 +134,9 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/clashstats"
+                    path="/tbl"
                     element={
-                      <ClashStats/>
-                    }
-                ></Route>
-                <Route
-                    path="/arduinx"
-                    element={
-                      <Arduinx/>
+                      <TennisLauncher/>
                     }
                 ></Route>
             </Routes>

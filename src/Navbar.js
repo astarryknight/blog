@@ -71,7 +71,7 @@ export default function Navbar({nav, setNav}) {
             {open2 && (
               <List sx={{ '--ListItem-paddingY': '8px' }}>
                 <ListItem>
-                  <ListItemButton>Tennis Ball Launcher</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/tbl')}}>Tennis Ball Launcher</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Self-Tightening Sneakers</ListItemButton>

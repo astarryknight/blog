@@ -23,9 +23,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./notch-blog.gif";
-import bt from "./airpods.gif";
-import cal from "./calendar1.gif"
+import hero from "./assets/notch-blog.gif";
+import bt from "./assets/airpods.gif";
+import cal from "./assets/calendar1.gif"
 
 
 export default function Notchable() {
