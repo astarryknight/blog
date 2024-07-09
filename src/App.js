@@ -15,8 +15,9 @@ import Home from "./articles/Home.js";
 import About from "./articles/About.js";
 import Photos from "./articles/Photos.js";
 import Template from "./articles/Template.js";
-import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js"
 import TennisLauncher from "./articles/TennisLauncher.js";
+import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js"
+import Keyboard from "./articles/Keyboard.js";
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
 
@@ -144,6 +145,12 @@ function App() {
                     path="/sts"
                     element={
                       <SelfTighteningSneakers/>
+                    }
+                ></Route>
+                <Route
+                    path="/keyboard"
+                    element={
+                      <Keyboard/>
                     }
                 ></Route>
             </Routes>
