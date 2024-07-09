@@ -23,11 +23,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/keyboard_complete.jpg";
+import hero from "./assets/ckeyboard.jpg";
 import solder from "./assets/keyboard_solder.jpg";
 
 
-export default function Keyboard() {
+export default function CoptKeyboard() {
   const [loading, setLoading] = React.useState(true);
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
   // This will run one time after the component mounts
