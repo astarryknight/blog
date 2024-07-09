@@ -115,7 +115,7 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/study')}}>Study Buddy</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Coptic Wordle</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/wordle')}}>Coptic Wordle</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/notchable')}}>Notchable</ListItemButton>

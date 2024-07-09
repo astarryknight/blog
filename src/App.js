@@ -23,6 +23,7 @@ import OldPortfolio from "./articles/OldPortfolio.js";
 import Snake from "./articles/Snake.js";
 import Tetris from "./articles/Tetris.js";
 import Minesweeper from "./articles/Minesweeper.js";
+import Wordle from "./articles/Wordle.js";
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
 
@@ -186,6 +187,12 @@ function App() {
                     path="/minesweeper"
                     element={
                       <Minesweeper/>
+                    }
+                ></Route>
+                <Route
+                    path="/wordle"
+                    element={
+                      <Wordle/>
                     }
                 ></Route>
             </Routes>
