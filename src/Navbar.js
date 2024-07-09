@@ -55,34 +55,6 @@ export default function Navbar({nav, setNav}) {
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/about')}}><ListItemButton className="norm"><AboutIcon/>About Me</ListItemButton></ListItem>
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/photos')}}><ListItemButton className="norm"><PhotoIcon/>Photo Gallery</ListItemButton></ListItem>
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/template')}}><ListItemButton className="norm"><BugIcon/>Template</ListItemButton></ListItem>
-          <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen(!open)}>
-                <KeyboardArrowDown
-                  sx={{ transform: open ? 'initial' : 'rotate(-90deg)' }}
-                />
-              </IconButton>
-            }
-          >
-            <ListItem>
-              <Typography level="inherit" sx={{ fontWeight: open ? 'bold' : undefined, color: open ? 'text.primary' : 'inherit',}}>
-                Early Projects
-              </Typography>
-              <Typography component="span" level="body-xs">
-                2
-              </Typography>
-            </ListItem>
-            {open && (
-              <List sx={{ '--ListItem-paddingY': '8px' }}>
-                <ListItem>
-                  <ListItemButton>Clash Stats</ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    Project ArduinX
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            )}
-          </ListItem>
           <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen2((bool) => !bool)}>
             <KeyboardArrowDown sx={{ transform: open2 ? 'initial' : 'rotate(-90deg)' }}/>
               </IconButton>
