@@ -73,44 +73,32 @@ export default function Minesweeper() {
                 }
                 />
                 </Skeleton>
-            <Typography level='body-sm' sx={{my:'.5em'}}>Tetris game window</Typography>
+            <Typography level='body-sm' sx={{my:'.5em'}}>Minesweeper game window</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>Following the Snake game, I wanted to continue on my classic canvas journey. I decided that 
-              tetris would be my next target, as I had attempted and failed in the past, but felt that my current knowledge would be enough to create the game 
-              fully this time.
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Following the Snake and Tetris games, I wanted to finish my classic canvas journey. I've loved 
+              playing minesweeper on google, and so that is what inspired this project.
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>The Game</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">This game was the most complex of the 3 I created (see the other 2 in the "Virtual Projects tab"). I created a custom class for 
-              each piece, holding its base position (0,0 of the piece itself), along with its current rotated configuration (piece positions based off of the base position) 
-              and color/type. Collisions were a bit difficult, but not too bad in the end as it was just a simple check of where the piece would be in the next frame and a 
-              check for overlapping squares. Since tetris is played on a gird, this made it MUCH easier. Lastly, cleared lines. I created an array that held where pieces were 
-              and checked if a full row was empty; if it was, it would clear it out from each piece object and move any pieces that were above down by 1 row. Phew, that was a lot, 
-              but I did it!
-            </Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
-            <Typography level='h2'>The Bot</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">And nooow, for the bot. This was the most complex part of this project by FAR. It was a heuristic algorithm, meaning it ranked 
-              each piece move based off of a few characteristics (number of holes, number of lines cleared, overall height, etc) and decided which one was the best move. 
-              The bot then played that best move and did the next piece. This sounds simple in theory, but trying to fine tune the values for this is quite a difficult ask. 
-              For example, if you make the algorithm prefer less holes, you might get a really tall overall height and end up stacking up too much. So, trying to balance every part 
-              of the bot was quite a feat, and I got it down pretty well I think. It was able to go for hundreds of lines before failing. While not perfect, it was definitely still 
-              very good for a tetris bot!
+            <Typography level="body-md">I was expecting this game to be a piece of cake. I was able to mock-up a board and generate all the numbers within about 1 hour. 
+              However, the big roadblock came when it was time to show the clicked tiles. For tiles that have a number, this isn't a challenge at all, because it just 
+              shows that tile. However, for empty tiles, it shows chain of empty tiles around it, ending off with tiles that have numbers. This was a difficult task to 
+              solve, but I found an algorithm that did just the trick. It is called the flood flow algorithm. Essentially, you "flood" out from the central tile, and 
+              keep going until you've reached a certain edge parameter. This worked perfectly for me, and I was able to implement it in the game easily. I also added 
+              a flagging feature, although there is no automatic clear function when you middle/right click like in the google game.
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">Although this was a very tough project, I was able to complete it very well and even create an autonomous bot that can play tetris on 
-              its own. i am very pleased with this and learned about heuristic algorithms and ranked choice which I've already applied in my personal life. And its also a fun 
-              thing to watch at full speed!
+            <Typography level="body-md">I was expecting this project to be easy, but I had a good challenge figuring out each part of the project. I learned a new 
+              algorithm and also had tons of fun, both building and playing the game. In the end, I am proud of all of my classic games and hope I can continue to 
+              make even more in the future!
             </Typography>
         </Sheet>
     </Sheet>
