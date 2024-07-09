@@ -7,6 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import {useNavigate, useSearchParams} from 'react-router-dom';
 
 //file imports
 import './articleStyles.css';
@@ -28,6 +29,7 @@ import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
+  const navigate=useNavigate();
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
@@ -72,7 +74,7 @@ export default function Home() {
             />
             </Skeleton>
           </AspectRatio>
-          <Button startDecorator={<View />}>View Project</Button>
+          <Button startDecorator={<View />} onClick={()=>{navigate('/copt_keyboard')}}>View Project</Button>
         </Sheet>
       </Sheet>
     </Sheet>

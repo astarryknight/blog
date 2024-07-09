@@ -53,7 +53,6 @@ export default function Navbar({nav, setNav}) {
         >
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/')}} ><ListItemButton className="norm"><HomeIcon/>Home</ListItemButton></ListItem>
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/about')}}><ListItemButton className="norm"><AboutIcon/>About Me</ListItemButton></ListItem>
-          <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/photos')}}><ListItemButton className="norm"><PhotoIcon/>Photo Gallery</ListItemButton></ListItem>
           <ListItem className="normWrap" sx={{ my: .5 }} onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/template')}}><ListItemButton className="norm"><BugIcon/>Template</ListItemButton></ListItem>
           <ListItem nested sx={{ my: .5 }} startAction={ <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen2((bool) => !bool)}>
             <KeyboardArrowDown sx={{ transform: open2 ? 'initial' : 'rotate(-90deg)' }}/>
