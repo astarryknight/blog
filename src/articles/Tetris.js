@@ -108,7 +108,10 @@ export default function Tetris() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md"></Typography>
+            <Typography level="body-md">Although this was a very tough project, I was able to complete it very well and even create an autonomous bot that can play tetris on 
+              its own. i am very pleased with this and learned about heuristic algorithms and ranked choice which I've already applied in my personal life. And its also a fun 
+              thing to watch at full speed!
+            </Typography>
         </Sheet>
     </Sheet>
   );
