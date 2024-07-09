@@ -106,7 +106,7 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/snake')}}>Snake Game & Bot</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton >Tetris Game & Bot</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/tetris')}}>Tetris Game & Bot</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Minesweeper</ListItemButton>
