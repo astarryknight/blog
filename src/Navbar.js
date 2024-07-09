@@ -65,7 +65,7 @@ export default function Navbar({nav, setNav}) {
                 Physical Projects
               </Typography>
               <Typography component="span" level="body-xs">
-                5
+                4
               </Typography>
             </ListItem>
             {open2 && (
@@ -81,9 +81,6 @@ export default function Navbar({nav, setNav}) {
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Coptic Keyboard</ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>Ghost Chessboard</ListItemButton>
                 </ListItem>
               </List>
             )}

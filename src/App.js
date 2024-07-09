@@ -132,6 +132,18 @@ function App() {
                       <Notchable/>
                     }
                 ></Route>
+                <Route
+                    path="/clashstats"
+                    element={
+                      <ClashStats/>
+                    }
+                ></Route>
+                <Route
+                    path="/arduinx"
+                    element={
+                      <Arduinx/>
+                    }
+                ></Route>
             </Routes>
           </Sheet>
         </Sheet>

@@ -28,7 +28,7 @@ import bt from "./airpods.gif";
 import cal from "./calendar1.gif"
 
 
-export default function Study() {
+export default function Notchable() {
   const [loading, setLoading] = React.useState(true);
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
   // This will run one time after the component mounts
