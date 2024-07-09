@@ -97,15 +97,18 @@ export default function Tetris() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>The Bot</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">And nooow, for the bot. This was the most complex part of this project by FAR. 
+            <Typography level="body-md">And nooow, for the bot. This was the most complex part of this project by FAR. It was a heuristic algorithm, meaning it ranked 
+              each piece move based off of a few characteristics (number of holes, number of lines cleared, overall height, etc) and decided which one was the best move. 
+              The bot then played that best move and did the next piece. This sounds simple in theory, but trying to fine tune the values for this is quite a difficult ask. 
+              For example, if you make the algorithm prefer less holes, you might get a really tall overall height and end up stacking up too much. So, trying to balance every part 
+              of the bot was quite a feat, and I got it down pretty well I think. It was able to go for hundreds of lines before failing. While not perfect, it was definitely still 
+              very good for a tetris bot!
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">This was a really fun intro into Javascript canvas. Not really knowing much going in, I learned a ton of 
-              useful functions to use in the canvas, and I'm ready to apply them to many future projects in canvas. Its also a fun game to 
-              play in my free time!</Typography>
+            <Typography level="body-md"></Typography>
         </Sheet>
     </Sheet>
   );
