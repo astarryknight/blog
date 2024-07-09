@@ -73,34 +73,41 @@ export default function Snake() {
                 }
                 />
                 </Skeleton>
-            <Typography level='body-sm' sx={{my:'.5em'}}>Main page with an example study set</Typography>
+            <Typography level='body-sm' sx={{my:'.5em'}}>Snake game window</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>I wanted to have a website where I could host all of my projects and achievements,
-                like a more fun version of a resume in essence that could fully showcase all of the work I have put into my personal projects. I didn't 
-                want it to end up like every other person's website, and I wanted to add some dynamic elements to it, so I started playing around with designs 
-                in Figma until I found something that looked cool.
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Classic computer games have always captivated me. Whether it be minesweeper, solitaire, 
+              snake, or pacman, I've always enjoyed playing these simple yet enjoyable games. I wanted to see if I could recreate some of these games using 
+              my javascript knowledge and learn about the javascript canvas interface. So, the first game I attempted was snake.
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
-            <Typography level='h2'>The Design</Typography>
+            <Typography level='h2'>The Game</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">I designed it to have different blocks where content could be put. Each block would change depeding on the 
-                page of the site (about, projects, contact) and would move dynamically to add a fun movement to the website instead of just static 
-                text. I added arrows on the sides in addition to the navbar on the bottom to have a more versatile experience when moving between 
-                pages. On the projects page, I created dialogs that pop up when you click on the item to reveal more information about the project in 
-                question. Those were styled in a macOS window esque design, although they really could like however I like.</Typography>
+            <Typography level="body-md">This game was the simplest of the 3 I created (see the other 2 below in the "Virtual Projects tab"). It utilized 
+              a list for the snake, which was drawn every tick, and the apple was randomly generated throughout the map, making sure not to overlap the snake. 
+              I made a dynamic game speed so I could control how fast the snake moves, and I fine tuned it to a perfect speed for the player to play at, although 
+              they themseles cannot control it. One thing I did not implement was collisions. This was partly due to my laziness, but also partly due to the fact 
+              that I wanted the snake to wrap around the canvas. So, when you hit a wall, you wrap around to the other side.
+            </Typography>
+        </Sheet>
+        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
+            <Typography level='h2'>The Bot</Typography>
+            <Divider sx={{my:'.2em'}}/>
+            <Typography level="body-md">After I finished creating the game, I wanted to see how simple it would be to create a bot that could autonomously play the 
+              snake game. And, not to my surprise, it was a very simple algorithm. All I had to do was calculate the x and y deltas from the snake's head to the apple,
+              and then tell the snake to move in those directions until it reached the apple and a new one was generated. Like I said, extremely simple (foreshadowing 
+              to the tetris bot...).
+            </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">I really loved how unique but vibrant my website was. However, when I started moving between devices, especially 
-                to mobile, I realized that my design wasn't really responsive. I was trying to fit too much information into the screen and it wasn't 
-                easily organizable. That's the reason I decided to move to a more blog style website, because it's pretty easy to design for both mobile 
-                and desktop (and everything in between!). Although I'm a little sad about abandoning this cool design, I learned a lot (WebGL/three.js, 
-                shaders, dialogs, etc) and will carry a ton of this knowledge to my future web development projects.</Typography>
+            <Typography level="body-md">This was a really fun intro into Javascript canvas. Not really knowing much going in, I learned a ton of 
+              useful functions to use in the canvas, and I'm ready to apply them to many future projects in canvas. Its also a fun game to 
+              play in my free time!</Typography>
         </Sheet>
     </Sheet>
   );
