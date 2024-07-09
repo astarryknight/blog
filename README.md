@@ -1,3 +1,3 @@
 # Blog
 
-Personal Blog Website for [@astarryknight](github.com/astarryknight)
+Personal Blog Website for [@astarryknight](https://github.com/astarryknight)
