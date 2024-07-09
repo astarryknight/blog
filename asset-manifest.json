@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.08b5dc94.css",
-    "main.js": "/blog/static/js/main.7c34d0a3.js",
+    "main.js": "/blog/static/js/main.d63f27bc.js",
     "static/js/453.4d1e5ba5.chunk.js": "/blog/static/js/453.4d1e5ba5.chunk.js",
     "static/media/g_mug.jpg": "/blog/static/media/g_mug.ac031f412fe30b7fb04d.jpg",
     "static/media/g_ocean.jpg": "/blog/static/media/g_ocean.6c42ac5a223d62566a33.jpg",
@@ -18,12 +18,17 @@
     "static/media/airpods.gif": "/blog/static/media/airpods.6a346b4d61d65489641f.gif",
     "static/media/notch-blog.gif": "/blog/static/media/notch-blog.dc661c5a45ba2ea51799.gif",
     "static/media/calendar1.gif": "/blog/static/media/calendar1.d17667719998c0e15fe9.gif",
+    "static/media/dark_mode.png": "/blog/static/media/dark_mode.995ac09c73d2ad48d8b1.png",
     "static/media/keyboard.png": "/blog/static/media/keyboard.1d8b8012335472a7b408.png",
+    "static/media/wordle.png": "/blog/static/media/wordle.6fb20d16eb53fe32a99c.png",
     "static/media/study.png": "/blog/static/media/study.72c5020988e0d1b790e5.png",
     "static/media/inter-latin-ext-400-normal.woff": "/blog/static/media/inter-latin-ext-400-normal.40b3b0d5e09a90fb6e3e.woff",
+    "static/media/snake.png": "/blog/static/media/snake.7bf8aa0d8603bc0b0d53.png",
     "static/media/inter-latin-ext-400-normal.woff2": "/blog/static/media/inter-latin-ext-400-normal.0f9e8d4e940df8f6edfe.woff2",
     "static/media/inter-latin-400-normal.woff": "/blog/static/media/inter-latin-400-normal.08a02fd275ecea6ef662.woff",
+    "static/media/tetris2.png": "/blog/static/media/tetris2.31abe8e5ed9ed627b5a0.png",
     "static/media/inter-latin-400-normal.woff2": "/blog/static/media/inter-latin-400-normal.f1535355a7df553be385.woff2",
+    "static/media/minesweeper.png": "/blog/static/media/minesweeper.95ddd8a51942ad89ee0e.png",
     "static/media/inter-cyrillic-ext-400-normal.woff": "/blog/static/media/inter-cyrillic-ext-400-normal.cd2ad378115f549d3c5b.woff",
     "static/media/inter-greek-400-normal.woff": "/blog/static/media/inter-greek-400-normal.1eeaf1d0bde712085ffc.woff",
     "static/media/inter-cyrillic-ext-400-normal.woff2": "/blog/static/media/inter-cyrillic-ext-400-normal.ac62c8eba7f954b48546.woff2",
@@ -36,11 +41,11 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/blog/static/media/inter-vietnamese-400-normal.5952d3d3c5df5a2f8e09.woff2",
     "index.html": "/blog/index.html",
     "main.08b5dc94.css.map": "/blog/static/css/main.08b5dc94.css.map",
-    "main.7c34d0a3.js.map": "/blog/static/js/main.7c34d0a3.js.map",
+    "main.d63f27bc.js.map": "/blog/static/js/main.d63f27bc.js.map",
     "453.4d1e5ba5.chunk.js.map": "/blog/static/js/453.4d1e5ba5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08b5dc94.css",
-    "static/js/main.7c34d0a3.js"
+    "static/js/main.d63f27bc.js"
   ]
 }
