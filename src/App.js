@@ -20,6 +20,7 @@ import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js";
 import CoptKeyboard from "./articles/CoptKeyboard.js";
 import Keyboard from "./articles/Keyboard.js";
 import OldPortfolio from "./articles/OldPortfolio.js"
+import Snake from "./articles/Snake.js"
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
 
@@ -165,6 +166,12 @@ function App() {
                     path="/portfolio_old"
                     element={
                       <OldPortfolio/>
+                    }
+                ></Route>
+                <Route
+                    path="/snake"
+                    element={
+                      <Snake/>
                     }
                 ></Route>
             </Routes>

@@ -103,10 +103,10 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/portfolio_old')}}>(Old) Portfolio Website</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Snake Game & Bot</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/snake')}}>Snake Game & Bot</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Tetris Game & Bot</ListItemButton>
+                  <ListItemButton >Tetris Game & Bot</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Minesweeper</ListItemButton>
