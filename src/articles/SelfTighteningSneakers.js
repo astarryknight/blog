@@ -23,7 +23,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/tennis.jpg";
+import hero from "./assets/sneaker.jpg";
+import sketch from "./assets/sneaker_sketch.jpg"
 
 
 export default function SelfTighteningSneakers() {
@@ -49,9 +50,9 @@ export default function SelfTighteningSneakers() {
   return(
     <Sheet sx={{width:'75%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'left'}}>
-            <Typography level='h1'>Tennis Ball Launcher</Typography>
-            <Typography level='body-md'>An innovative solution to a tennis dilemma.</Typography>
-            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | SEPTEMBER 2023</Typography>
+            <Typography level='h1'>Self Tightening Sneakers</Typography>
+            <Typography level='body-md'>A new way to wear shoes.</Typography>
+            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | OCTOBER 2023</Typography>
             <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <Stack direction='row' spacing={'.5em'} sx={{height:'fit-content'}}>
                     <Chip sx={{backgroundColor:'rgba(150,0,255,0.4)'}}>Physical Project</Chip>
@@ -61,7 +62,7 @@ export default function SelfTighteningSneakers() {
         </Sheet>
         <Divider sx={{marginBottom:'1em', marginTop:'.35em'}}/>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItems:'center'}}>
-            <AspectRatio variant="plain" sx={{ width:'100%', maxWidth:'800px' }}>
+            <AspectRatio variant="plain" sx={{ width:'100%', maxWidth:'1000px' }}>
                 <Skeleton loading={loading}>
                     <img src={
                     loading 
@@ -71,25 +72,34 @@ export default function SelfTighteningSneakers() {
                 />
                 </Skeleton>
             </AspectRatio>
-            <Typography level='body-sm' sx={{my:'.5em'}}>A picture of the completed launcher</Typography>
+            <Typography level='body-sm' sx={{my:'.5em'}}>A picture of the inner workings of the sneaker</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
-            <Typography level='h2'>The Challenge</Typography>
+            <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>During the first week of my engineering class, my class was tasked with building a mechanism that 
-                could launch a tennis ball the furthest. We were only given 2 weeks to complete this entire project, so I knew I wanted to keep my design simple. I 
-                also didn't want to break the bank with the project, so I wanted a viable design that was both cheap and simple. Air cannons that had been done in years
-                past were very effective, but also didn't meet either of my criteria for the launcher.
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>This project came about from a <a href="https://www.youtube.com/watch?v=1kj5N67J2aE" target="_blank">
+            Hacksmith Video</a>, where they created Self Lacing Sneakers. However, one thing I noticed from the video was that they had all the electronic components 
+            on the bottom of the shoe, being exposed to whatever elements you would be walking over. I wanted to see if I could fully conceal these elements inside 
+            the shoe for a better structure and durability of the project.
             </Typography>
         </Sheet>
-        
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Design</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>So, as I mentioned above, I wanted a cheap and simple design to solve this problem. I came up with 
-                a design that was inspired by another pvc crossbow on the internet. I thought it was an ingenious idea to use the big PVC pipe as a sort of 
-                barrel for the ball and the smaller PVC as the actual bow, attached by a bungee cord. I also planned to have different angle adjustements so I could
-                find the optimal angle (which in theory is 45 degrees, but not always in practice).
+                <Skeleton loading={loading} >
+                    <img style={{width:"100%", maxWidth: "500px", marginTop: ".5em"}} src={
+                    loading 
+                    ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                    : sketch
+                }
+                />
+                </Skeleton>
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Following the hacksmith video, the laces are controlled by a central shaft that turns to roll up the 
+                laces and tighten the shoe and also unravel the laces to loosen the shoe. I added indicator lights similar to those on the hacksmith shoe to indicate 
+                what state the shoe was in (tightening, idle, etc). However, one very unique element of my shoe is the actuation mechanism. While the hacksmith shoe used 
+                a button to actuate the shoes, I wanted to have a "magic" element to it. So, I used a property of aluminum foil called "capacitive touch". Essentially, the 
+                circuit is wired in such a way that by putting your hand near the aluminum foil, you create a temporary ground and create a longer delay in the circuit. Once 
+                this is detected by the arduino, it will actuate the shoes.
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
