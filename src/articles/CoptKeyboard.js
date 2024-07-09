@@ -50,9 +50,9 @@ export default function CoptKeyboard() {
   return(
     <Sheet sx={{width:'75%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'left'}}>
-            <Typography level='h1'>3D Printed Custom Keyboard</Typography>
-            <Typography level='body-md'>A cost effective way to get into the Custom Keyboard space.</Typography>
-            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | DECEMBER 2023</Typography>
+            <Typography level='h1'>Coptic Keyboard</Typography>
+            <Typography level='body-md'>A clean modern look for an ancient language.</Typography>
+            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | MARCH 2023</Typography>
             <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <Stack direction='row' spacing={'.5em'} sx={{height:'fit-content'}}>
                     <Chip sx={{backgroundColor:'rgba(150,0,255,0.4)'}}>Physical Project</Chip>

@@ -157,7 +157,7 @@ function App() {
                 <Route
                     path="/copt_keyboard"
                     element={
-                      <CoptssKeyboard/>
+                      <CoptKeyboard/>
                     }
                 ></Route>
             </Routes>
