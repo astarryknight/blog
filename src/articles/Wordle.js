@@ -66,7 +66,7 @@ export default function Wordle() {
         <Divider sx={{marginBottom:'1em', marginTop:'.35em'}}/>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItems:'center'}}>
                 <Skeleton loading={loading}>
-                    <img style={{ width:'100%', maxWidth:'750px' }} src={
+                    <img style={{ width:'100%', maxWidth:'400px' }} src={
                     loading 
                     ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
                     : hero
@@ -78,39 +78,29 @@ export default function Wordle() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>Following the Snake game, I wanted to continue on my classic canvas journey. I decided that 
-              tetris would be my next target, as I had attempted and failed in the past, but felt that my current knowledge would be enough to create the game 
-              fully this time.
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>This was one of my biggest passion projects. It started from learning about the lack of Coptic 
+              knowledge in the Coptic Orthodox Church, despite having Coptic as one of the main language in prayer and liturgical services. So, I wanted to think 
+              of creative ways to have people learn Coptic vocabulary. And then Wordle came to my mind. I remember seeing Wordle ports in other languages and thought 
+              I could do the same thing here. So it began!
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>The Game</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">This game was the most complex of the 3 I created (see the other 2 in the "Virtual Projects tab"). I created a custom class for 
-              each piece, holding its base position (0,0 of the piece itself), along with its current rotated configuration (piece positions based off of the base position) 
-              and color/type. Collisions were a bit difficult, but not too bad in the end as it was just a simple check of where the piece would be in the next frame and a 
-              check for overlapping squares. Since tetris is played on a gird, this made it MUCH easier. Lastly, cleared lines. I created an array that held where pieces were 
-              and checked if a full row was empty; if it was, it would clear it out from each piece object and move any pieces that were above down by 1 row. Phew, that was a lot, 
-              but I did it!
-            </Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
-            <Typography level='h2'>The Bot</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">And nooow, for the bot. This was the most complex part of this project by FAR. It was a heuristic algorithm, meaning it ranked 
-              each piece move based off of a few characteristics (number of holes, number of lines cleared, overall height, etc) and decided which one was the best move. 
-              The bot then played that best move and did the next piece. This sounds simple in theory, but trying to fine tune the values for this is quite a difficult ask. 
-              For example, if you make the algorithm prefer less holes, you might get a really tall overall height and end up stacking up too much. So, trying to balance every part 
-              of the bot was quite a feat, and I got it down pretty well I think. It was able to go for hundreds of lines before failing. While not perfect, it was definitely still 
-              very good for a tetris bot!
+            <Typography level="body-md">The actual mechanics of the game weren't very hard to create, since I had done many javacsript projects in the past and was 
+              very familiar with the language. With some help from family members, I was able to get all the functionality up and running. But, here comes the hard 
+              part. There is no database of Coptic words I could pull from. And, having the goal of Coptic literacy, I also wanted to include more information about the 
+              word in the results summary. So, I had to hand-pick each word, its meaning, part of speech, and use in context. This was a very painstaking process, and I 
+              still don't have a clear solution to this problem. However, there have been some promising developments with others in the Coptic community coming close to 
+              achieving a sort of Coptic dictionary database, so I will likely update this project when that is fully operational.
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">Although this was a very tough project, I was able to complete it very well and even create an autonomous bot that can play tetris on 
-              its own. i am very pleased with this and learned about heuristic algorithms and ranked choice which I've already applied in my personal life. And its also a fun 
-              thing to watch at full speed!
+            <Typography level="body-md">After it's official release, this app was a success! It reached hundreds of users all over the globe, and many people played it 
+              consistently! I am super happy with all the progress I made with this project so far and I hope to continue working to grow Coptic literacy in the future. 
+              I have a couple more ideas up my sleeve, so they will probably end up here once they are finished.
             </Typography>
         </Sheet>
     </Sheet>
