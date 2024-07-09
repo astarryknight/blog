@@ -74,7 +74,7 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/tbl')}}>Tennis Ball Launcher</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Self-Tightening Sneakers</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/sts')}}>Self-Tightening Sneakers</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Custom Keyboard</ListItemButton>

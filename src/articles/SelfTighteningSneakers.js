@@ -26,7 +26,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import hero from "./assets/tennis.jpg";
 
 
-export default function TennisLauncher() {
+export default function SelfTighteningSneakers() {
   const [loading, setLoading] = React.useState(true);
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
   // This will run one time after the component mounts

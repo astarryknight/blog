@@ -15,6 +15,7 @@ import Home from "./articles/Home.js";
 import About from "./articles/About.js";
 import Photos from "./articles/Photos.js";
 import Template from "./articles/Template.js";
+import SelfTighteningSneakers from "./article/SelfTighteningSneakers.js"
 import TennisLauncher from "./articles/TennisLauncher.js";
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
@@ -137,6 +138,12 @@ function App() {
                     path="/tbl"
                     element={
                       <TennisLauncher/>
+                    }
+                ></Route>
+                <Route
+                    path="/sts"
+                    element={
+                      <SelfTighteningSneakers/>
                     }
                 ></Route>
             </Routes>
