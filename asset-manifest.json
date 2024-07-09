@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.08b5dc94.css",
-    "main.js": "/blog/static/js/main.5e18fa96.js",
+    "main.js": "/blog/static/js/main.7c34d0a3.js",
     "static/js/453.4d1e5ba5.chunk.js": "/blog/static/js/453.4d1e5ba5.chunk.js",
     "static/media/g_mug.jpg": "/blog/static/media/g_mug.ac031f412fe30b7fb04d.jpg",
     "static/media/g_ocean.jpg": "/blog/static/media/g_ocean.6c42ac5a223d62566a33.jpg",
     "static/media/g_flower.jpg": "/blog/static/media/g_flower.e5dd1aac4b1d7f89da6d.jpg",
+    "static/media/tennis.jpg": "/blog/static/media/tennis.5028bae247a7424414c5.jpg",
     "static/media/g_dog.jpg": "/blog/static/media/g_dog.e7b091c4897ebe5f1689.jpg",
     "static/media/g_ramen.jpg": "/blog/static/media/g_ramen.66a7686d3efc6a4c5d21.jpg",
+    "static/media/ckeyboard.jpg": "/blog/static/media/ckeyboard.98041ccc8595e8bfd95e.jpg",
+    "static/media/sneaker_sketch.jpg": "/blog/static/media/sneaker_sketch.262a934d16083ba9eb51.jpg",
+    "static/media/ckeyboard_idea.jpg": "/blog/static/media/ckeyboard_idea.f0dc46914229f49da5d5.jpg",
+    "static/media/sneaker.jpg": "/blog/static/media/sneaker.9aa97df03658850f2d6d.jpg",
+    "static/media/keyboard_solder.jpg": "/blog/static/media/keyboard_solder.4ca879873d687fc61f27.jpg",
+    "static/media/keyboard_complete.jpg": "/blog/static/media/keyboard_complete.587a741abdd400be777c.jpg",
+    "static/media/airpods.gif": "/blog/static/media/airpods.6a346b4d61d65489641f.gif",
+    "static/media/notch-blog.gif": "/blog/static/media/notch-blog.dc661c5a45ba2ea51799.gif",
+    "static/media/calendar1.gif": "/blog/static/media/calendar1.d17667719998c0e15fe9.gif",
     "static/media/keyboard.png": "/blog/static/media/keyboard.1d8b8012335472a7b408.png",
     "static/media/study.png": "/blog/static/media/study.72c5020988e0d1b790e5.png",
     "static/media/inter-latin-ext-400-normal.woff": "/blog/static/media/inter-latin-ext-400-normal.40b3b0d5e09a90fb6e3e.woff",
@@ -26,11 +36,11 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/blog/static/media/inter-vietnamese-400-normal.5952d3d3c5df5a2f8e09.woff2",
     "index.html": "/blog/index.html",
     "main.08b5dc94.css.map": "/blog/static/css/main.08b5dc94.css.map",
-    "main.5e18fa96.js.map": "/blog/static/js/main.5e18fa96.js.map",
+    "main.7c34d0a3.js.map": "/blog/static/js/main.7c34d0a3.js.map",
     "453.4d1e5ba5.chunk.js.map": "/blog/static/js/453.4d1e5ba5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08b5dc94.css",
-    "static/js/main.5e18fa96.js"
+    "static/js/main.7c34d0a3.js"
   ]
 }
