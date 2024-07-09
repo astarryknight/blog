@@ -49,18 +49,17 @@ export default function Study() {
   return(
     <Sheet sx={{width:'75%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'left'}}>
-            <Typography level='h1'>Study Buddy</Typography>
-            <Typography level='body-md'>Simple flashcard website that decentralizes study sets</Typography>
-            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | APRIL 2024</Typography>
+            <Typography level='h1'>Notchable</Typography>
+            <Typography level='body-md'>A reimagined way to interact with the macOS Notch.</Typography>
+            <Typography level='body-sm' sx={{my:'.15em'}}>JOHN GIRGIS | JULY 2024</Typography>
             <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <Stack direction='row' spacing={'.5em'} sx={{height:'fit-content'}}>
                     <Chip sx={{backgroundColor:'rgba(0,0,255,0.4)'}}>Virtual Project</Chip>
                     <Chip sx={{backgroundColor:'rgba(0,255,0,0.4)'}}>Completed</Chip>
-                    <Chip sx={{backgroundColor:'#61dbfb'}}>React</Chip>
+                    <Chip sx={{backgroundColor:'#f05137'}}>Swift</Chip>
                 </Stack>
                 <Stack direction='row' spacing={0}>
-                    <IconButton onClick={()=>{window.open('https://github.com/astarryknight/joyui', '_blank')}}><GitHubIcon/></IconButton>
-                    <IconButton onClick={()=>{window.open('https://astarryknight.github.io/joyui/', '_blank')}}><LaunchIcon/></IconButton>
+                    <IconButton onClick={()=>{window.open('https://github.com/astarryknight/notchable', '_blank')}}><GitHubIcon/></IconButton>
                 </Stack>
             </Sheet>
         </Sheet>
@@ -76,16 +75,16 @@ export default function Study() {
                 />
                 </Skeleton>
             </AspectRatio>
-            <Typography level='body-sm' sx={{my:'.5em'}}>MAIN PAGE WITH AN EXAMPLE STUDY SET</Typography>
+            <Typography level='body-sm' sx={{my:'.5em'}}>Example notification through the Notch</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Beginning</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>I started my design journey as a regular HTML/JS/CSS project. 
-            I created a header and basic flashcard system, and was working on creating a builder page 
-            in which sets could be built and shared with others. However, while I was working on this, 
-            a friend brought to my attention Javascript frameworks that could help me make this project 
-            much easier (ie. Svelte, React, etc). So, I decided to learn how to use React for this project.</Typography>
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>This was my first project in Swift. Ever. So you can imagine that this was quite a difficult
+                challenge to take on. During the first couple of days, I was still trying to get used the Swift language and structure, but I eventually
+                warmed up to the language and was able to quickly and efficiently implement the notch I wanted to create. I'll outline some of the things I learned 
+                about development in Swift, and then outline the features of the app.
+            </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
             <Typography level='h2'>Starting out with React</Typography>
