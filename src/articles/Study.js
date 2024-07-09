@@ -76,7 +76,7 @@ export default function Study() {
                 />
                 </Skeleton>
             </AspectRatio>
-            <Typography level='body-sm' sx={{my:'.5em'}}>MAIN PAGE WITH AN EXAMPLE STUDY SET</Typography>
+            <Typography level='body-sm' sx={{my:'.5em'}}>Main page with an example study set</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Beginning</Typography>
