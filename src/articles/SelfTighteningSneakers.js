@@ -103,23 +103,13 @@ export default function SelfTighteningSneakers() {
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
-            <Typography level='h2'>The Problem</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">For the first couple of days, I made a lot of progress on my design. I was able to succesfully create a channel in the large PVC pipe
-                to allow the bungee cord to ride smoothly along. I also attached all of the pieces to a small piece of wood, and went outside for my first test. That's when I 
-                realized the problem: the bungee cord was going underneath the tennis ball when there was a lot of tension, meaning the tennis ball wouldn't launch at all. I 
-                was pretty annoyed, especially with the timed deadline, but got to work trying to fix this problem. Eventually, I landed on a solution that was just a 3d Printed 
-                filler that would go in-between the ball and the bungeee cord, making sure the bungee cord could not go under the ball. This actually worked really well, and 
-                made it much easier for the ball to shoot out of the PVC pipe. I also broke the small PVC pipe after sustained tension on the last day of testing, so I had to 
-                replace it with some spare that I had lying around.
-            </Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">In the end, I succeeded in my goal to make a cheap and simple design, although adding some extra innovation to it. My final launch went 
-                about 45-50 yards, so I am pretty proud of its performance in only 2 weeks. It was definitely a challenging project for me, as I'm not a mechanically oriented 
-                engineer, but it helped me grow my skills in that area for future projects.
+            <Typography level="body-md">Overall, this project was very much experimental and I am happy with the level I was able to acheive with all the electronics in the shoe.
+                 I learned a lot about CAD as I had to create models for each individual part in the entire assembly, which I was not used to. I also learned some cool new scientific
+                  principles, such as capacitive touch. However, I'm not fully able to use the shoe in the capacities I had expected, not being able to easily procure a battery that 
+                  would fit, and also due to size and time constraints. If I worked on this project more, I think I could make it much more reliable by adding a closed loop system for 
+                  sensing if the shoe is tied or not, permanently mounting components and laces, among other things. However, I am extremely pleased with how this project turned out.
             </Typography>
         </Sheet>
     </Sheet>
