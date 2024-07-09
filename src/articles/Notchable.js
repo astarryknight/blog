@@ -87,63 +87,43 @@ export default function Study() {
             </Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
-            <Typography level='h2'>Starting out with React</Typography>
+            <Typography level='h2'>Swift</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>Trying to learn a new framework for this project was definitely a challenge,
-             as it is not something I am familiar with using. But, as time progressed, I gradually became more comfortable using react. 
-             Here are a few of the main differences I found between React and a regular stack (HTML/JS/CSS):</Typography>
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>As I mentioned, Swift was (and still is!) a very new language to me and it took me 
+                a while to get used to the language. Here are some notable things I found in my Swift development:
+            </Typography>
              <Sheet sx={{width:'100%', borderLeft:'1px solid rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.2)', marginTop:'1em'}}>
                 <Sheet sx={{insetInlineStart:'2em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>Hooks</Typography>
+                    <Typography level='h3'>Files, Files, Files</Typography>
                     <Divider />
-                    <Typography sx={{marginTop:'.3em'}}>This is the main difference between the two in terms of logic. In a regular website, everything you want 
-                        dynamically controlled is in the Javascript file, and has to be continuously updated in a function or an event listener. 
-                        In React, you can use hooks, which continuously update the value of an element (such as a title, for example) without the 
-                        need for lots of functions and other javascript code to aid.</Typography>
+                    <Typography sx={{marginTop:'.3em'}}>This was one of the biggest things I had to get used to in Swift. While a lot of my
+                        development, usually web focused, is not very abstracted (at least not of the same type, ie. Javascript), this Swift
+                        project took on many different files. Firstly, there are AppDelegates, which create the app and handle any initial and 
+                        final events. Next, there are Views. These are programmed parts of the swift project that can display something on the 
+                        screen. Finally, there are View Controllers. These are files that are used to control the current view and run a lot 
+                        of the main functions of the program. There are also specific handlers, error managers, etc but that is past the scope 
+                        of my knowledge and this article!
+                    </Typography>
                 </Sheet>
                 <Sheet sx={{insetInlineStart:'2em',my:'1em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>Components</Typography>
+                    <Typography level='h3'>Permissions</Typography>
                     <Divider/>
-                    <Typography sx={{marginTop:'.3em'}}>In a regular website, each page is an html file. In React, each file is called a "component". Components can be 
-                        full pages, or they can be parts of pages (ie. header, footer, etc) that can persist through website links and other 
-                        events that happen on the website.</Typography>
-                </Sheet>
-                <Sheet sx={{insetInlineStart:'2em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>Code Structure</Typography>
-                    <Divider/>
-                    <Typography sx={{marginTop:'.3em'}}>In a regular website, everything is separated into different files. In react, however, the javascript, HTML, and 
-                        CSS can all be controlled in a singular file, which helps to keep things clean and concise during development</Typography>
+                    <Typography sx={{marginTop:'.3em'}}>I never realized how imortant permissions would be in my app. Although I've seen 
+                        these permission prompts many times on my iPhone, I didn't realize that the developers needed to configure them in 
+                        such a verbose way. To get calendar permissions, for example, you need to add a parameter to an app file and give 
+                        a reason for accessing the calender. This will then prompt the user on the first run of the app if they will allow
+                        the app to access their Calendar.
+                    </Typography>
                 </Sheet>
              </Sheet>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
-            <Typography level='h2'>JoyUI</Typography>
+            <Typography level='h2'>Features</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md"> I also decided to use a UI framework, which is basically a pre-built library of UI components that are easily configurable and
-             add to a nice cohesive design without a lot of hassle. This was my first time trying one, and I really loved the ease of use with React. It was easy to 
-             pick out colors, implement light/dark modes, and style each component as needed.</Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
-            <Typography level='h2'>Flashcards</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">This is the main section of the website (at least for now!). It is the main form of studying which simulates how regular flashcards
-             would work. I started out with a basic functionality that has an array of cards, and each button cycles either left or right in the set. By clicking on the 
-             card itself, it will toggle if the term or the definition is being displayed. I created a custom class to manage these cards (called nodes), which stores the 
-             term and definition in one array element, making it very easy to manipulate the flashcards.</Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
-            <Typography level='h2'>Builder</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md">This is the next part of the website that would be used. It is the place to create study sets that can be studied. The user can set
-             a title and add as many cards as they want. This can then be shared with other users, as is explained in the next section.</Typography>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
-            <Typography level='h2'>Data Storage</Typography>
-            <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>For this project, I need some way to store data. There are 2 main ways of thinking for this. First would be
-             a centralized database that can have contributors, and links could be built using this to link to sets from a database. The other way would be a more decentralized
-              approach. By not requiring a login or having a database to store information, users could share links that would contain all the necessary information. I 
-              explored both of these approaches, here is what I found:</Typography>
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Let's talk about the Notchable features. My app was built off of a project
+                called DynamicNotchKit (which can be found <a href="https://github.com/MrKai77/DynamicNotchKit" target="_blank">here</a>). That library gives
+                a perfect framework for displaying notifications from the notch. My task was to use that framework and apply it to some of 
+                Apple's many APIs. Here are the ones I have completed so far:</Typography>
              <Sheet sx={{width:'100%', borderLeft:'1px solid rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.2)', marginTop:'1em'}}>
                 <Sheet sx={{insetInlineStart:'2em',marginBottom:'1em', width:'calc(100% - 2em)'}}>
                     <Typography level='h3'>JSON</Typography>
