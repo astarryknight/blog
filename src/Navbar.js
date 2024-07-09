@@ -109,16 +109,13 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/tetris')}}>Tetris Game & Bot</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Minesweeper</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/minesweeper')}}>Minesweeper</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/study')}}>Study Buddy</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Coptic Wordle</ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>The Coptic Learning Project (CLP)</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/notchable')}}>Notchable</ListItemButton>
