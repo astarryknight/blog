@@ -24,6 +24,8 @@ import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
 import hero from "./study.png";
+import bt from "./airpods.gif";
+import cal from "./calendar1.gif"
 
 
 export default function Study() {
@@ -126,15 +128,33 @@ export default function Study() {
                 Apple's many APIs. Here are the ones I have completed so far:</Typography>
              <Sheet sx={{width:'100%', borderLeft:'1px solid rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.2)', marginTop:'1em'}}>
                 <Sheet sx={{insetInlineStart:'2em',marginBottom:'1em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>JSON</Typography>
+                    <Typography level='h3'>Bluetooth</Typography>
                     <Divider/>
-                    <Typography sx={{marginTop:'.3em'}}>For the database approach, I chose to use JSON as it is a commonly used data storage format. I modeled it after
-                     the card objects I had already created (see Flashcards Section above). This was good, although it required a static import in react that I did not know how to 
-                     make dynamic.</Typography>
+                    <Skeleton loading={loading} sx={{marginTop:'.3em'}}>
+                        <img style={{marginTop:'.6em'}} src={
+                            loading 
+                            ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                            : bt
+                        }
+                        />
+                    </Skeleton>
+                    <Typography sx={{marginTop:'.15em'}}>The Bluetooth implementation was the first feature on Notchable. The way it works is through a 
+                        bluetooth polling function, which checks the list of connected devices and compares it to a previous list to determine if a new 
+                        device has connected (or if an old one has disconnected). If a device is found to have connected or disconnected, a notification 
+                        is sent to the notch, with the name of the device, its state (connected / disconnected), and its icon.
+                    </Typography>
                 </Sheet>
                 <Sheet sx={{insetInlineStart:'2em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>URL Data</Typography>
+                    <Typography level='h3'>Calendar</Typography>
                     <Divider/>
+                    <Skeleton loading={loading} sx={{marginTop:'.3em'}}>
+                        <img style={{marginTop:'.6em'}} src={
+                            loading 
+                            ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                            : cal
+                        }
+                        />
+                    </Skeleton>
                     <Typography sx={{marginTop:'.3em'}}>For the decentralized data approach, I used URL variables (query string). These are very versatile and are used 
                     in many applications such as session ids and information about a shared webpage. This required a little more intensive knowledge for encoding/decoding 
                     (although Javascript has built-in functions, atob() and bota()!) so that the set couldn't be easily modified, although there aren't any real security 
