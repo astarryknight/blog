@@ -16,7 +16,8 @@ import About from "./articles/About.js";
 import Photos from "./articles/Photos.js";
 import Template from "./articles/Template.js";
 import TennisLauncher from "./articles/TennisLauncher.js";
-import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js"
+import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js";
+import cKeyboard from "./articles/cKeyboard.js";
 import Keyboard from "./articles/Keyboard.js";
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
@@ -151,6 +152,12 @@ function App() {
                     path="/keyboard"
                     element={
                       <Keyboard/>
+                    }
+                ></Route>
+                <Route
+                    path="/copt_keyboard"
+                    element={
+                      <cKeyboard/>
                     }
                 ></Route>
             </Routes>

@@ -80,7 +80,7 @@ export default function Navbar({nav, setNav}) {
                   <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/keyboard')}}>Custom Keyboard</ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton>Coptic Keyboard</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/copt_keyboard')}}>Coptic Keyboard</ListItemButton>
                 </ListItem>
               </List>
             )}
