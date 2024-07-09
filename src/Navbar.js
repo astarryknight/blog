@@ -100,7 +100,7 @@ export default function Navbar({nav, setNav}) {
             {open3 && (
               <List sx={{ '--ListItem-paddingY': '8px' }}>
                 <ListItem>
-                  <ListItemButton>(Old) Portfolio Website</ListItemButton>
+                  <ListItemButton onClick={()=>{isTabletOrMobile&&setNav(false);navigate('/portfolio_old')}}>(Old) Portfolio Website</ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton>Snake Game & Bot</ListItemButton>

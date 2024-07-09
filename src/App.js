@@ -19,6 +19,7 @@ import TennisLauncher from "./articles/TennisLauncher.js";
 import SelfTighteningSneakers from "./articles/SelfTighteningSneakers.js";
 import CoptKeyboard from "./articles/CoptKeyboard.js";
 import Keyboard from "./articles/Keyboard.js";
+import OldPortfolio from "./articles/OldPortfolio.js"
 import Study from "./articles/Study.js";
 import Notchable from "./articles/Notchable.js";
 
@@ -158,6 +159,12 @@ function App() {
                     path="/copt_keyboard"
                     element={
                       <CoptKeyboard/>
+                    }
+                ></Route>
+                <Route
+                    path="/portfolio_old"
+                    element={
+                      <OldPortfolio/>
                     }
                 ></Route>
             </Routes>
