@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./study.png";
+import hero from "./notch-blog.gif";
 import bt from "./airpods.gif";
 import cal from "./calendar1.gif"
 
@@ -155,40 +155,22 @@ export default function Study() {
                         }
                         />
                     </Skeleton>
-                    <Typography sx={{marginTop:'.3em'}}>For the decentralized data approach, I used URL variables (query string). These are very versatile and are used 
-                    in many applications such as session ids and information about a shared webpage. This required a little more intensive knowledge for encoding/decoding 
-                    (although Javascript has built-in functions, atob() and bota()!) so that the set couldn't be easily modified, although there aren't any real security 
-                    risks involved with the website.</Typography>
-                </Sheet>
-             </Sheet>
-        </Sheet>
-        <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em'}}>
-            <Typography level='h2'>Bugs</Typography>
-            <Divider sx={{my:'.2em'}}/>
-             <Sheet sx={{width:'100%', borderLeft:'1px solid rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.2)', marginTop:'1em'}}>
-                <Sheet sx={{insetInlineStart:'2em',marginBottom:'1em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>Improper usage of hooks</Typography>
-                    <Divider/>
-                    <Typography sx={{marginTop:'.3em'}}>When editing an array, hooks do NOT update. Instead, you need to create a new array for the hook to trigger
-                     and the page to rerender, which is a problem I encountered when trying to generate the builder page when a user creates a new node.</Typography>
-                </Sheet>
-                <Sheet sx={{insetInlineStart:'2em', width:'calc(100% - 2em)'}}>
-                    <Typography level='h3'>Random generation and UIDs</Typography>
-                    <Divider/>
-                    <Typography sx={{marginTop:'.3em'}}>Another problem with the builder page and nodes is the unique identifier associated with it. Since I was 
-                    using an arbitrary index property, deleting from the list would not work properly and would always delete the last element of the array. Instead, 
-                    I used a random function (Math.random()) to generate a unique index for each node so that there is no confusion when deleting from the 
-                    array.</Typography>
+                    <Typography sx={{marginTop:'.3em'}}>The Calendar implementation was a bit more tricky. Although Apple does provide an API to 
+                        retreive calendar events, it does not handle evevnt edits. Instead, Apple returns multiple events with the same ID. So, I created 
+                        an event handler to make sure no duplicate events popped up while events were edited. The calendar view currently pops up when 
+                        the mouse goes under the notch. It shows the current month, day (highlighted in blue), and upcoming events for the day. 
+                    </Typography>
                 </Sheet>
              </Sheet>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>Conclusion</Typography>
             <Divider sx={{my:'.2em'}}/>
-            <Typography level="body-md"> This project was really fun to create. I learned a ton of new skills in web development that made it very easy to create a 
-            cohesive and aesthetically pleasing website design. I was also pleased with how easy it was to create a responsive design, not needing to use any media 
-            queries to get a decent design on both desktop and mobile devices. In addition, it is a useful tool to make basic flashcards that can be studied and 
-            shared very easily.</Typography>
+            <Typography level="body-md">This was an amazing project to do as my first one on Swift. Although it was definitely a big learning curve,
+                I learned a ton about code structure and abstraction in Swift development, along with Views and View handlers, and made my transition 
+                into the Apple development universe much smoother. I hope that I can add more features to this app in the future and create many more 
+                cool apps for both MacOS and iOS!
+            </Typography>
         </Sheet>
     </Sheet>
   );
