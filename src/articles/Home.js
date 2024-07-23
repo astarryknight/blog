@@ -13,7 +13,7 @@ import {useNavigate, useSearchParams} from 'react-router-dom';
 import './articleStyles.css';
 
 //image imports
-import keyboard from "../images/keyboard.png";
+import keyboard from "./assets/webp/ckeyboard.webp"
 
 //component imports
 import Sheet from '@mui/joy/Sheet';

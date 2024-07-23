@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/ckeyboard.jpg";
+import hero from "./assets/webp/ckeyboard.webp";
 import idea from "./assets/ckeyboard_idea.jpg";
 
 
@@ -75,8 +75,7 @@ export default function CoptKeyboard() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>Inspired by my previous project in the custom keybaord space (check it out 
-              <a href="astarryknight.github.io/blog#/keyboard">here</a>), I decided to make a new keyboard design. This time, it would have not only 
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Inspired by my previous project in the custom keybaord space (check it out <a href="astarryknight.github.io/blog#/keyboard">here</a>), I decided to make a new keyboard design. This time, it would have not only 
               the English legends on the keycaps, but also feature another language, Coptic, which is the ancient language of Egypt that is preserved 
               in the Coptic Church.
             </Typography>
@@ -85,20 +84,23 @@ export default function CoptKeyboard() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Build</Typography>
             <Divider/>
+            <Stack sx={{marginTop:".5em"}} spacing={2} direction="row">
             <Skeleton loading={loading}>
-                    <img style={{ width:'100%', maxWidth:'350px', marginTop: "0.5em" }} src={
+                    <img style={{ width:'100%', maxWidth:'350px', height:"50%", marginTop: "0.5em" }} src={
                     loading 
                     ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
                     : idea
                 }
                 />
             </Skeleton>
+            <Divider orientation='vertical'/>
             <Typography level="body-md" sx={{marginTop:'.5em'}}>The build process was very similar to my previous keyboard. I used a 3d printed case and plate, 
               but this time I bought blank keycaps to use. I initially was going to use a process called dye sublimation to apply the ink to the keycaps and 
               give them a more professional finish, but I decided against it due to the lack of materials and the cost. I explored other ideas and ultimately 
               landed on a sticker-like finish that I could print in a regular printer and place onto each keycap. This worked pretty well, being mostly flush with 
               the keycap and giving it a more glossy finish.
             </Typography>
+            </Stack>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>Conclusion</Typography>
