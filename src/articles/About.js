@@ -19,6 +19,8 @@ import Skeleton from '@mui/joy/Skeleton';
 import AspectRatio from '@mui/joy/AspectRatio';
 import AboutIcon from '@mui/icons-material/EmojiPeopleRounded';
 
+import about from "./assets/about.jpg"
+
 export default function About() {
   const [loading, setLoading] = React.useState(true);
   //ON LOAD CODE FROM: https://stackoverflow.com/questions/57729504/is-there-a-way-to-tell-when-your-react-app-page-is-done-loading-the-page-asset
@@ -48,7 +50,8 @@ export default function About() {
       <Sheet id="content" sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet id="leftContent" sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Background</Typography>
-          <Typography level='body-md'>Hi, I'm John Girgis. I have a passion for bringing ideas to life, whether through physical/mechanical and electrical design or through programming. Most of my physical projects have focused on being innovative solutions to modern problems (see self-tightening sneakers and ghost chessboard). For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see Coptic Wordle and Coptic Language/Learning Project).</Typography>
+          <Typography level='body-md'>Hi, I'm John Girgis. I have a passion for bringing ideas to life, whether through physical/mechanical and electrical design or through programming. 
+            Most of my physical projects have focused on being innovative solutions to modern problems (see <a href="astarryknight.github.io/blog#/sts">self-tightening sneakers</a>). For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see <a href="astarryknight.github.io/blog#/wordle">Coptic Wordle</a>).</Typography>
           {/*<<Divider sx={{my:'2em'}}/>
           Typography level='h3'>Skills</Typography>
           <div style={{width:"100%"}}>
@@ -91,7 +94,12 @@ export default function About() {
         <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
           <AspectRatio ratio="5/6" variant="plain" sx={{ width:'100%', my:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
             <Skeleton loading={true}>
-
+              <img src={
+                    loading 
+                    ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                    : about
+                }
+                />
             </Skeleton>
           </AspectRatio>
         </Sheet>

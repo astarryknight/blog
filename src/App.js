@@ -65,7 +65,7 @@ function StickyGroup({open, setOpen}) {
         >
             {mode === 'light' ? <Sun /> : <Moon />}
         </IconButton>
-        <IconButton onClick={()=>{setOpen(true)}} sx={{backgroundColor:'background.body'}}><SearchIcon/></IconButton>
+        {/*<IconButton onClick={()=>{setOpen(true)}} sx={{backgroundColor:'background.body'}}><SearchIcon/></IconButton>*/}
       </ButtonGroup>
   );
 }
