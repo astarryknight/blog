@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/dark_mode.png";
+import hero from "./assets/webp/dark_mode.webp";
 
 
 export default function OldPortfolio() {

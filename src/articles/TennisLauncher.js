@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/tennis.jpg";
+import hero from "./assets/webp/tennis.webp";
 
 
 export default function TennisLauncher() {

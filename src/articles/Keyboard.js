@@ -23,8 +23,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/keyboard_complete.jpg";
-import solder from "./assets/keyboard_solder.jpg";
+import hero from "./assets/webp/keyboard_complete.webp";
+import solder from "./assets/webp/keyboard_solder.webp";
 
 
 export default function Keyboard() {

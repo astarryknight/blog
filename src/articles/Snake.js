@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/snake.png";
+import hero from "./assets/webp/snake.webp";
 
 
 export default function Snake() {

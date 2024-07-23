@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/sneaker.jpg";
+import hero from "./assets/webp/sneaker.webp";
 import sketch from "./assets/sneaker_sketch.jpg"
 
 

@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/tetris2.png";
+import hero from "./assets/webp/tetris2.webp";
 
 
 export default function Tetris() {

@@ -23,7 +23,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 //Images
-import hero from "./assets/minesweeper.png";
+import hero from "./assets/webp/minesweeper.webp";
 
 
 export default function Minesweeper() {
