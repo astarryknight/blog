@@ -62,16 +62,14 @@ export default function SelfTighteningSneakers() {
         </Sheet>
         <Divider sx={{marginBottom:'1em', marginTop:'.35em'}}/>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItems:'center'}}>
-            <AspectRatio variant="plain" sx={{ width:'100%', maxWidth:'1000px' }}>
                 <Skeleton loading={loading}>
-                    <img src={
+                    <img style={{ width:'100%', maxWidth:'350px' }} src={
                     loading 
                     ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
                     : hero
                 }
                 />
                 </Skeleton>
-            </AspectRatio>
             <Typography level='body-sm' sx={{my:'.5em'}}>A picture of the inner workings of the sneaker</Typography>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
