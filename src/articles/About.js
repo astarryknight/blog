@@ -19,7 +19,7 @@ import Skeleton from '@mui/joy/Skeleton';
 import AspectRatio from '@mui/joy/AspectRatio';
 import AboutIcon from '@mui/icons-material/EmojiPeopleRounded';
 
-import about from "./assets/about.jpg"
+import hero from "./assets/about.jpg";
 
 export default function About() {
   const [loading, setLoading] = React.useState(true);
@@ -44,11 +44,10 @@ export default function About() {
   return(
     <Sheet sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Sheet sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        
         <Typography level='h1'>About</Typography>
       </Sheet>
       <Sheet id="content" sx={{width:'100%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-        <Sheet id="leftContent" sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
+        <Sheet id="leftContent" sx={{width:'45%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Background</Typography>
           <Typography level='body-md'>Hi, I'm John Girgis. I have a passion for bringing ideas to life, whether through physical/mechanical and electrical design or through programming. 
             Most of my physical projects have focused on being innovative solutions to modern problems (see <a href="astarryknight.github.io/blog#/sts">self-tightening sneakers</a>). For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see <a href="astarryknight.github.io/blog#/wordle">Coptic Wordle</a>).</Typography>
@@ -91,13 +90,13 @@ export default function About() {
           </div>*/}
         </Sheet>
         <Divider orientation="vertical" />
-        <Sheet sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
-          <AspectRatio ratio="5/6" variant="plain" sx={{ width:'100%', my:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
-            <Skeleton loading={true}>
+        <Sheet sx={{width:'35%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
+          <AspectRatio ratio="3/4" variant="plain" sx={{ width:'100%', my:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItmes:'center' }}>
+            <Skeleton loading={loading}>
               <img src={
                     loading 
                     ? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
-                    : about
+                    : hero
                 }
                 />
             </Skeleton>
