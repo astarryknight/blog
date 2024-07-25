@@ -75,7 +75,7 @@ export default function CoptKeyboard() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
-            <Typography level="body-md" sx={{marginTop:'.5em'}}>Inspired by my previous project in the custom keybaord space (check it out <a href="astarryknight.github.io/blog#/keyboard">here</a>), I decided to make a new keyboard design. This time, it would have not only 
+            <Typography level="body-md" sx={{marginTop:'.5em'}}>Inspired by my previous project in the custom keybaord space (check it out <a href="https://astarryknight.github.io/blog#/keyboard">here</a>), I decided to make a new keyboard design. This time, it would have not only 
               the English legends on the keycaps, but also feature another language, Coptic, which is the ancient language of Egypt that is preserved 
               in the Coptic Church.
             </Typography>

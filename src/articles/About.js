@@ -50,7 +50,8 @@ export default function About() {
         <Sheet id="leftContent" sx={{width:'45%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Background</Typography>
           <Typography level='body-md'>Hi, I'm John Girgis. I have a passion for bringing ideas to life, whether through physical/mechanical and electrical design or through programming. 
-            Most of my physical projects have focused on being innovative solutions to modern problems (see <a href="astarryknight.github.io/blog#/sts">self-tightening sneakers</a>). For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see <a href="astarryknight.github.io/blog#/wordle">Coptic Wordle</a>).</Typography>
+            Most of my physical projects have focused on being innovative solutions to modern problems (see <a href="https://astarryknight.github.io/blog/#/sts">self-tightening sneakers</a>). 
+            For my programming projects, I also try to focus on solving problems in new ways, as the internet provides an amazing platform to share things through (see <a href="https://astarryknight.github.io/blog/#/wordle">Coptic Wordle</a>).</Typography>
           {/*<<Divider sx={{my:'2em'}}/>
           Typography level='h3'>Skills</Typography>
           <div style={{width:"100%"}}>

@@ -58,7 +58,7 @@ export default function Home() {
       <Sheet id='content' sx={{width:isDesktopOrLaptop?'100%':'80vw', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'row', justifyContent:'center'}}>
         <Sheet id='leftContent' sx={{width:'40%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', alignItems:'start'}}>
           <Typography level='h3'>Welcome!</Typography>
-          <Typography level='body-md'>Hi, I'm John Girgis. I'm a freelance developer, photographer, and engineer, and is is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the about me page for more infromation about me, or click on the featured project to see some of my work!</Typography>
+          <Typography level='body-md'>Hi, I'm John Girgis. I'm a freelance developer, photographer, and engineer, and this is my new portfolio site, where I will document the design and creation of each of my projects. Feel free to visit the <a href="https://astarryknight.github.io/blog#/about">About Me</a> page for more infromation about me, or click on the featured project to see some of my work!</Typography>
         </Sheet>
         <Divider orientation="vertical" />
         <Sheet sx={{width:'60%', height:'fit-content', my:'1em', mx:'1em', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginInline:'auto'}}>
