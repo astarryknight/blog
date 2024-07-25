@@ -76,8 +76,7 @@ export default function Keyboard() {
             <Typography level='h2'>The Idea</Typography>
             <Divider/>
             <Typography level="body-md" sx={{marginTop:'.5em'}}>I was recently interested in intering into the mechanical keyboard space. But, after looking 
-                at the prices of many of the keyboards, even at the lower end, I decided that it was quite expensive to try out. However, being inspired by 
-                <a href="https://www.youtube.com/@joe_scotto" target="_blank">@Joe Scotto</a>, I decided to 3D print and wire my own keyboard. I also wanted 
+                at the prices of many of the keyboards, even at the lower end, I decided that it was quite expensive to try out. However, being inspired by <a href="https://www.youtube.com/@joe_scotto" target="_blank">@Joe Scotto</a>, I decided to 3D print and wire my own keyboard. I also wanted 
                 to have a knob, so I decided to make it a point to keep it in my design.
             </Typography>
         </Sheet>
