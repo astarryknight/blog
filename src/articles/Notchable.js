@@ -130,6 +130,7 @@ export default function Notchable() {
                 <Sheet sx={{insetInlineStart:'2em',marginBottom:'1em', width:'calc(100% - 2em)'}}>
                     <Typography level='h3'>Bluetooth</Typography>
                     <Divider/>
+                    <Stack sx={{marginTop:".5em"}} spacing={2} direction="row">
                     <Skeleton loading={loading} sx={{marginTop:'.3em'}}>
                         <img style={{marginTop:'.6em'}} src={
                             loading 
@@ -138,15 +139,18 @@ export default function Notchable() {
                         }
                         />
                     </Skeleton>
+                    <Divider orientation="vertical"/>
                     <Typography sx={{marginTop:'.15em'}}>The Bluetooth implementation was the first feature on Notchable. The way it works is through a 
                         bluetooth polling function, which checks the list of connected devices and compares it to a previous list to determine if a new 
                         device has connected (or if an old one has disconnected). If a device is found to have connected or disconnected, a notification 
                         is sent to the notch, with the name of the device, its state (connected / disconnected), and its icon.
                     </Typography>
+                    </Stack>
                 </Sheet>
                 <Sheet sx={{insetInlineStart:'2em', width:'calc(100% - 2em)'}}>
                     <Typography level='h3'>Calendar</Typography>
                     <Divider/>
+                    <Stack sx={{marginTop:".5em"}} spacing={2} direction="row">
                     <Skeleton loading={loading} sx={{marginTop:'.3em'}}>
                         <img style={{marginTop:'.6em'}} src={
                             loading 
@@ -155,11 +159,13 @@ export default function Notchable() {
                         }
                         />
                     </Skeleton>
+                    <Divider orientation="vertical"/>
                     <Typography sx={{marginTop:'.3em'}}>The Calendar implementation was a bit more tricky. Although Apple does provide an API to 
                         retreive calendar events, it does not handle evevnt edits. Instead, Apple returns multiple events with the same ID. So, I created 
                         an event handler to make sure no duplicate events popped up while events were edited. The calendar view currently pops up when 
                         the mouse goes under the notch. It shows the current month, day (highlighted in blue), and upcoming events for the day. 
                     </Typography>
+                    </Stack>
                 </Sheet>
              </Sheet>
         </Sheet>

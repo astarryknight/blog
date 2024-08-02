@@ -84,6 +84,7 @@ export default function SelfTighteningSneakers() {
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', marginTop:'4em', my:'1.5em'}}>
             <Typography level='h2'>The Design</Typography>
             <Divider/>
+            <Stack sx={{marginTop:".5em"}} spacing={2} direction="row">
                 <Skeleton loading={loading} >
                     <img style={{width:"100%", maxWidth: "500px", marginTop: ".5em"}} src={
                     loading 
@@ -92,6 +93,7 @@ export default function SelfTighteningSneakers() {
                 }
                 />
                 </Skeleton>
+            <Divider orientation="vertical"/>
             <Typography level="body-md" sx={{marginTop:'.5em'}}>Following the hacksmith video, the laces are controlled by a central shaft that turns to roll up the 
                 laces and tighten the shoe and also unravel the laces to loosen the shoe. I added indicator lights similar to those on the hacksmith shoe to indicate 
                 what state the shoe was in (tightening, idle, etc). However, one very unique element of my shoe is the actuation mechanism. While the hacksmith shoe used 
@@ -99,6 +101,7 @@ export default function SelfTighteningSneakers() {
                 circuit is wired in such a way that by putting your hand near the aluminum foil, you create a temporary ground and create a longer delay in the circuit. Once 
                 this is detected by the arduino, it will actuate the shoes.
             </Typography>
+            </Stack>
         </Sheet>
         <Sheet sx={{width:'100%', height:'fit-content', display:'flex', flexDirection:'column', alignItmems:'left', my:'1.5em', marginBottom:'2em'}}>
             <Typography level='h2'>Conclusion</Typography>
