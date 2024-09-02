@@ -90,6 +90,7 @@ function App() {
               <Divider inset="none" />
               <Stack direction="row" justifyContent="center" alignItems="center" spacing={'.5em'} sx={{my:'1.25vh'}}>
                 <IconButton onClick={()=>{window.open('https://github.com/astarryknight', '_blank');}} variant="outlined"><GitHubIcon sx={{width:'1em'}}/></IconButton>
+                <IconButton onClick={()=>{window.open('https://www.linkedin.com/in/john-l-girgis/', '_blank');}} variant="outlined"><LinkedInIcon sx={{width:'1em'}}/></IconButton>
               </Stack>
             </Sheet>
           </MediaQuery>
