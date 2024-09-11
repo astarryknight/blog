@@ -59,7 +59,7 @@ export default function Wordle() {
                 </Stack>
                 <Stack direction='row' spacing={0}>
                     <IconButton onClick={()=>{window.open('https://github.com/thecopticwordle/coptic-wordle', '_blank')}}><GitHubIcon/></IconButton>
-                    <IconButton onClick={()=>{window.open('https://wordle.thecopticlanguage.com/', '_blank')}}><LaunchIcon/></IconButton>
+                    <IconButton onClick={()=>{window.open('https://astarryknight.github.io/coptic_wordle_react', '_blank')}}><LaunchIcon/></IconButton>
                 </Stack>
             </Sheet>
         </Sheet>
