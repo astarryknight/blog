@@ -53,20 +53,20 @@ import MediaQuery, { useMediaQuery } from 'react-responsive'
 import MobileNav from './MobileNav.js';
 
 
-function StickyGroup({open, setOpen}) {
+function StickyGroup({ open, setOpen }) {
   const { mode, setMode } = useColorScheme();
   return (
-      <ButtonGroup orientation='vertical' variant="outlined" aria-label="Basic button group" sx={{height:'1em'}}>
-        <IconButton 
-            onClick={() => {
-                setMode(mode === 'light' ? 'dark' : 'light');
-            }}
-            sx={{backgroundColor:'background.body'}}
-        >
-            {mode === 'light' ? <Sun /> : <Moon />}
-        </IconButton>
-        {/*<IconButton onClick={()=>{setOpen(true)}} sx={{backgroundColor:'background.body'}}><SearchIcon/></IconButton>*/}
-      </ButtonGroup>
+    <ButtonGroup orientation='vertical' variant="outlined" aria-label="Basic button group" sx={{ height: '1em' }}>
+      <IconButton
+        onClick={() => {
+          setMode(mode === 'light' ? 'dark' : 'light');
+        }}
+        sx={{ backgroundColor: 'background.body' }}
+      >
+        {mode === 'light' ? <Sun /> : <Moon />}
+      </IconButton>
+      {/*<IconButton onClick={()=>{setOpen(true)}} sx={{backgroundColor:'background.body'}}><SearchIcon/></IconButton>*/}
+    </ButtonGroup>
   );
 }
 
@@ -79,122 +79,122 @@ function App() {
     <CssVarsProvider>
       <Router>
         <Modal open={open} onClose={() => setOpen(false)} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Input size="md" placeholder="Site Search..." startDecorator={<SearchIcon />} endDecorator={<Button sx={{height:'80%', width:'3em'}}><ReturnIcon/></Button>} sx={{width:'60%', maxWidth:'700px', height:'3em'}}></Input>
+          <Input size="md" placeholder="Site Search..." startDecorator={<SearchIcon />} endDecorator={<Button sx={{ height: '80%', width: '3em' }}><ReturnIcon /></Button>} sx={{ width: '60%', maxWidth: '700px', height: '3em' }}></Input>
         </Modal>
-        <Sheet variant="solid" sx={{backgroundColor:'background.body', display:'flex', flexDirection:'row'}}>
+        <Sheet variant="solid" sx={{ backgroundColor: 'background.body', display: 'flex', flexDirection: 'row' }}>
           <MediaQuery minWidth={1224}>
-            <Sheet id="nav" sx={{backgroundColor:'background.level1', width:'23vw', maxWidth:'260px', height:'100vh', display:'flex', flexDirection:'column'}}>
-              <Sheet sx={{backgroundColor:'background.level1', flexGrow:'1', overflowY:'auto', overflowX:'hidden'}}>
-                <Navbar/>
+            <Sheet id="nav" sx={{ backgroundColor: 'background.level1', width: '23vw', maxWidth: '260px', height: '100vh', display: 'flex', flexDirection: 'column' }}>
+              <Sheet sx={{ backgroundColor: 'background.level1', flexGrow: '1', overflowY: 'auto', overflowX: 'hidden' }}>
+                <Navbar />
               </Sheet>
               <Divider inset="none" />
-              <Stack direction="row" justifyContent="center" alignItems="center" spacing={'.5em'} sx={{my:'1.25vh'}}>
-                <IconButton onClick={()=>{window.open('https://github.com/astarryknight', '_blank');}} variant="outlined"><GitHubIcon sx={{width:'1em'}}/></IconButton>
-                <IconButton onClick={()=>{window.open('https://www.linkedin.com/in/john-l-girgis/', '_blank');}} variant="outlined"><LinkedInIcon sx={{width:'1em'}}/></IconButton>
+              <Stack direction="row" justifyContent="center" alignItems="center" spacing={'.5em'} sx={{ my: '1.25vh' }}>
+                <IconButton onClick={() => { window.open('https://github.com/astarryknight', '_blank'); }} variant="outlined"><GitHubIcon sx={{ width: '1em' }} /></IconButton>
+                <IconButton onClick={() => { window.open('https://www.linkedin.com/in/john-girgis-nj/', '_blank'); }} variant="outlined"><LinkedInIcon sx={{ width: '1em' }} /></IconButton>
               </Stack>
             </Sheet>
           </MediaQuery>
           <MediaQuery maxWidth={1224}>
-            <IconButton sx={{position:'absolute', width:'1em', top:'1em', left:'1em', zIndex:'1'}} onClick={()=>{setNav(!nav)}}>{<MenuIcon/>}</IconButton>
+            <IconButton sx={{ position: 'absolute', width: '1em', top: '1em', left: '1em', zIndex: '1' }} onClick={() => { setNav(!nav) }}>{<MenuIcon />}</IconButton>
             <Modal open={nav} onClose={() => setNav(false)}>
-              <MobileNav nav={nav} setNav={setNav}/>
+              <MobileNav nav={nav} setNav={setNav} />
             </Modal>
           </MediaQuery>
-          <Sheet sx={{position:'absolute', top:'1em', right:'1.75em', zIndex:'1'}}>
-            <StickyGroup open={open} setOpen={setOpen}/>
+          <Sheet sx={{ position: 'absolute', top: '1em', right: '1.75em', zIndex: '1' }}>
+            <StickyGroup open={open} setOpen={setOpen} />
           </Sheet>
-          <Sheet sx={{width:"100%", height:"100vh", overflowY:'auto', overflowX:'hidden', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+          <Sheet sx={{ width: "100%", height: "100vh", overflowY: 'auto', overflowX: 'hidden', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
             <Routes>
-                <Route
-                    path="/"
-                    element={
-                      <Home/>
-                    }
-                ></Route>
-                <Route
-                    path="/about"
-                    element={
-                      <About/>
-                    }
-                ></Route>
-                <Route
-                    path="/photos"
-                    element={
-                      <Photos/>
-                    }
-                ></Route>
-                <Route
-                    path="/template"
-                    element={
-                      <Template/>
-                    }
-                ></Route>
-                <Route
-                    path="/study"
-                    element={
-                      <Study/>
-                    }
-                ></Route>
-                <Route
-                    path="/notchable"
-                    element={
-                      <Notchable/>
-                    }
-                ></Route>
-                <Route
-                    path="/tbl"
-                    element={
-                      <TennisLauncher/>
-                    }
-                ></Route>
-                <Route
-                    path="/sts"
-                    element={
-                      <SelfTighteningSneakers/>
-                    }
-                ></Route>
-                <Route
-                    path="/keyboard"
-                    element={
-                      <Keyboard/>
-                    }
-                ></Route>
-                <Route
-                    path="/copt_keyboard"
-                    element={
-                      <CoptKeyboard/>
-                    }
-                ></Route>
-                <Route
-                    path="/portfolio_old"
-                    element={
-                      <OldPortfolio/>
-                    }
-                ></Route>
-                <Route
-                    path="/snake"
-                    element={
-                      <Snake/>
-                    }
-                ></Route>
-                <Route
-                    path="/tetris"
-                    element={
-                      <Tetris/>
-                    }
-                ></Route>
-                <Route
-                    path="/minesweeper"
-                    element={
-                      <Minesweeper/>
-                    }
-                ></Route>
-                <Route
-                    path="/wordle"
-                    element={
-                      <Wordle/>
-                    }
-                ></Route>
+              <Route
+                path="/"
+                element={
+                  <Home />
+                }
+              ></Route>
+              <Route
+                path="/about"
+                element={
+                  <About />
+                }
+              ></Route>
+              <Route
+                path="/photos"
+                element={
+                  <Photos />
+                }
+              ></Route>
+              <Route
+                path="/template"
+                element={
+                  <Template />
+                }
+              ></Route>
+              <Route
+                path="/study"
+                element={
+                  <Study />
+                }
+              ></Route>
+              <Route
+                path="/notchable"
+                element={
+                  <Notchable />
+                }
+              ></Route>
+              <Route
+                path="/tbl"
+                element={
+                  <TennisLauncher />
+                }
+              ></Route>
+              <Route
+                path="/sts"
+                element={
+                  <SelfTighteningSneakers />
+                }
+              ></Route>
+              <Route
+                path="/keyboard"
+                element={
+                  <Keyboard />
+                }
+              ></Route>
+              <Route
+                path="/copt_keyboard"
+                element={
+                  <CoptKeyboard />
+                }
+              ></Route>
+              <Route
+                path="/portfolio_old"
+                element={
+                  <OldPortfolio />
+                }
+              ></Route>
+              <Route
+                path="/snake"
+                element={
+                  <Snake />
+                }
+              ></Route>
+              <Route
+                path="/tetris"
+                element={
+                  <Tetris />
+                }
+              ></Route>
+              <Route
+                path="/minesweeper"
+                element={
+                  <Minesweeper />
+                }
+              ></Route>
+              <Route
+                path="/wordle"
+                element={
+                  <Wordle />
+                }
+              ></Route>
             </Routes>
           </Sheet>
         </Sheet>
